@@ -1,0 +1,45 @@
+\doxysection{Tech\+Widget.\+h}
+\hypertarget{_tech_widget_8h_source}{}\label{_tech_widget_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}BaseWidget.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Globals.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }TechWidget\ :\ \textcolor{keyword}{public}\ BaseWidget\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_tech_widget_1_1_window_params}{WindowParams}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ sf::Vector2u\ windowSize\{\ 1280,\ 720\ \};}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ std::string\ centerText\{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Data\ sorting.\ Merge\ sort\ method.\(\backslash\)nProbability\ distribution\ law\ of\ random\(\backslash\)nvariables\ 'Fisk'."{}}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::string\ exitButtonText\{\ \textcolor{stringliteral}{"{}Exit"{}}\ \};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ std::string\ leftImagePath\{\ (IMG\_FOLDER\ /\ \textcolor{stringliteral}{"{}left.png"{}}).\textcolor{keywordtype}{string}()\ \};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ std::string\ rightImagePath\{\ (IMG\_FOLDER\ /\ \textcolor{stringliteral}{"{}right.png"{}}).\textcolor{keywordtype}{string}()\ \};}
+\DoxyCodeLine{00016\ \ \ \ \ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ TechWidget();}
+\DoxyCodeLine{00019\ \ \ \ \ \string~TechWidget()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ show(tgui::Gui\&\ gui)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \ \ \ \ tgui::Container::Ptr\ getRootWidget()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ assignParameters()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ create()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{struct_tech_widget_1_1_window_params}{WindowParams}}\ windowParams;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ tgui::Label::Ptr\ centerTextLabel;}
+\DoxyCodeLine{00032\ \ \ \ \ tgui::Button::Ptr\ exitButton;}
+\DoxyCodeLine{00033\ \ \ \ \ tgui::Picture::Ptr\ leftImage;}
+\DoxyCodeLine{00034\ \ \ \ \ tgui::Picture::Ptr\ rightImage;}
+\DoxyCodeLine{00035\ \ \ \ \ tgui::Group::Ptr\ centerImageGroup;}
+\DoxyCodeLine{00036\ \ \ \ \ sf::Texture\ sftexture1;}
+\DoxyCodeLine{00037\ \ \ \ \ tgui::Texture\ tgtexture1;}
+\DoxyCodeLine{00038\ \ \ \ \ sf::Texture\ sftexture2;}
+\DoxyCodeLine{00039\ \ \ \ \ tgui::Texture\ tgtexture2;}
+\DoxyCodeLine{00040\ \};}
+
+\end{DoxyCode}

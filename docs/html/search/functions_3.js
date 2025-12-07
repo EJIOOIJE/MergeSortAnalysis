@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['generatefisk_0',['generateFisk',['../class_algorithm.html#a4a1bb029ae793584548cfca8ef0d4a7d',1,'Algorithm::generateFisk()'],['../class_fisk_generator.html#a34815a64cb6cf681550fad2f2e1de103',1,'FiskGenerator::generateFisk()']]],
+  ['generatefiskarray_1',['generateFiskArray',['../class_algorithm.html#aa90a56ddc4443846d8d7f2ce6b547151',1,'Algorithm::generateFiskArray()'],['../class_fisk_generator.html#a43a4a2d9347760ee3740d72f7fc4b37b',1,'FiskGenerator::generateFiskArray()']]],
+  ['generatesample_2',['generateSample',['../class_equation_data.html#a6a92f5375f5d8e3f6bc063a1a5643b1a',1,'EquationData']]],
+  ['geta0_3',['getA0',['../class_equation_data.html#a429c3b92c6820d8946dc099b426621cb',1,'EquationData']]],
+  ['geta1_4',['getA1',['../class_equation_data.html#a025cbbdaff416bc9de0614861fa2f674',1,'EquationData']]],
+  ['getbeta_5',['getBeta',['../class_equation_data.html#ad00e8190f8f95f1cafbe1b596b574fbd',1,'EquationData']]],
+  ['getcorr_6',['getCorr',['../class_equation_data.html#a3ff9f06564599068f78e0d000474318c',1,'EquationData']]],
+  ['getdata_7',['getData',['../class_sortable_array.html#a3491b5f653187d332dfdfe99ad9267b1',1,'SortableArray']]],
+  ['getdet_8',['getDet',['../class_equation_data.html#ad8a3fd15476b426fc880401c41db1206',1,'EquationData']]],
+  ['getelast_9',['getElast',['../class_equation_data.html#a22e7a94c838fed3a7d74d2545f096da1',1,'EquationData']]],
+  ['getfilename_10',['getFileName',['../class_sort_data.html#ac8176dbf417c009da9ee97640ca9c7e6',1,'SortData']]],
+  ['getfirst_11',['getFirst',['../class_sort_data.html#a778fef7f36d35bc33083e12df6598821',1,'SortData']]],
+  ['getfullname_12',['getFullName',['../class_sort_data.html#ab29ba4f6202d46e4ab611d8d87c115db',1,'SortData']]],
+  ['getn_13',['getN',['../class_equation_data.html#a158bb32131f051e61ed0c991299156a2',1,'EquationData']]],
+  ['getsecond_14',['getSecond',['../class_sort_data.html#a8d60a49b175a7391f7a3095f6dd52c15',1,'SortData']]],
+  ['getsize_15',['getSize',['../class_equation_data.html#ac6845b330f7bb3d5fbf100b2902eea7f',1,'EquationData']]],
+  ['getsortparams_16',['getSortParams',['../class_sort_data.html#aa38134702efcc93bc233010439a19ef6',1,'SortData']]],
+  ['getsortresult_17',['getSortResult',['../class_sort_data.html#a0b63ff1d52a773ae489549e0c9ca3f72',1,'SortData']]],
+  ['getsqx_18',['getSqx',['../class_equation_data.html#ae51be05681b6806c36507679ce096e09',1,'EquationData']]],
+  ['gettime_19',['getTime',['../class_equation_data.html#aabf40c17a9920ce45d87d9762d23f103',1,'EquationData']]],
+  ['getxmulty_20',['getXmulty',['../class_equation_data.html#a7b5934713d60c28365df2b8129c6587d',1,'EquationData']]]
+];

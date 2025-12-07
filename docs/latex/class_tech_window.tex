@@ -1,0 +1,110 @@
+\doxysection{Класс Tech\+Window}
+\hypertarget{class_tech_window}{}\label{class_tech_window}\index{TechWindow@{TechWindow}}
+
+
+Граф наследования\+:Tech\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_tech_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Tech\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_tech_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_tech_window_a542907ada0122887fc454ddd3bf8f94c}\label{class_tech_window_a542907ada0122887fc454ddd3bf8f94c} 
+{\bfseries Tech\+Window} (const sf\+::\+Vector2u \&window\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_base_window}{Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Base\+Window} (const sf\+::\+Vector2u \&window\+Size)
+\item 
+void {\bfseries update} ()
+\item 
+void {\bfseries update} (const \mbox{\hyperlink{struct_base_widget_1_1_window_params}{Base\+Widget\+::\+Window\+Params}} \&params)
+\item 
+void {\bfseries show} ()
+\item 
+tgui\+::\+Gui \& {\bfseries get\+Gui} ()
+\item 
+sf\+::\+Render\+Window \& {\bfseries get\+Window} ()
+\item 
+\mbox{\hyperlink{class_base_widget}{Base\+Widget}} \& {\bfseries get\+Widget} ()
+\item 
+void {\bfseries set\+Size} (const sf\+::\+Vector2u \&new\+Size)
+\item 
+void {\bfseries set\+Title} (const std\+::string \&title)
+\item 
+void {\bfseries stop} ()
+\item 
+void {\bfseries set\+Widget} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ new\+Widget)
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ {\bfseries release\+Widget} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tech_window_a97ba8269e44baad22f32a8d3beec03cf}{create\+Window}} (const sf\+::\+Vector2u \&window\+Size) override
+\item 
+void \mbox{\hyperlink{class_tech_window_a2ae408626a260d4fb96eceb9c8a530d2}{handle\+Event}} (const sf\+::\+Event \&event) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены унаследованные от \mbox{\hyperlink{class_base_window}{Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries prepare\+Widget} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_base_window}{Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window {\bfseries window}
+\item 
+tgui\+::\+Gui {\bfseries gui}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ {\bfseries widget}
+\item 
+sf\+::\+Vector2u {\bfseries size}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_tech_window_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_tech_window_a97ba8269e44baad22f32a8d3beec03cf}\index{TechWindow@{TechWindow}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!TechWindow@{TechWindow}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily \label{class_tech_window_a97ba8269e44baad22f32a8d3beec03cf} 
+void Tech\+Window\+::create\+Window (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2u \&}]{window\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_base_window}{Base\+Window}}.
+
+\Hypertarget{class_tech_window_a2ae408626a260d4fb96eceb9c8a530d2}\index{TechWindow@{TechWindow}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!TechWindow@{TechWindow}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily \label{class_tech_window_a2ae408626a260d4fb96eceb9c8a530d2} 
+void Tech\+Window\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_base_window}{Base\+Window}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Tech\+Window.\+h\item 
+Tech\+Window.\+cpp\end{DoxyCompactItemize}

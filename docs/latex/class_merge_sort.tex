@@ -1,0 +1,95 @@
+\doxysection{Шаблон класса Merge\+Sort\texorpdfstring{$<$}{<} Iterator \texorpdfstring{$>$}{>}}
+\hypertarget{class_merge_sort}{}\label{class_merge_sort}\index{MergeSort$<$ Iterator $>$@{MergeSort$<$ Iterator $>$}}
+
+
+Класс сортировки слиянием  
+
+
+
+
+{\ttfamily \#include $<$Merge\+Sort.\+h$>$}
+
+\doxysubsubsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_merge_sort_a459cdb307f8155503484c84cc6337b40}\label{class_merge_sort_a459cdb307f8155503484c84cc6337b40} 
+using {\bfseries Value\+Type} = typename std\+::iterator\+\_\+traits$<$Iterator$>$\+::value\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \mbox{\hyperlink{class_merge_sort_ab31924ebc850afa41ca07957e3e3f807}{sort}} (Iterator begin, Iterator end)
+\begin{DoxyCompactList}\small\item\em Шаблонная функция сортировки слиянием \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \mbox{\hyperlink{class_merge_sort_aeb323a311162b1dea413068de132a96a}{sort}} (std\+::vector$<$ double $>$ \&vec)
+\begin{DoxyCompactList}\small\item\em Функция сортировки слиянием для вектора$<$double$>$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+\subsubsection*{template$<$typename Iterator$>$\newline
+class Merge\+Sort$<$ Iterator $>$}
+Класс сортировки слиянием 
+
+Данный класс предоставляет функционал для сортировки слиянием различных итерируемых объектов. 
+
+\label{doc-func-members}
+\Hypertarget{class_merge_sort_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_merge_sort_ab31924ebc850afa41ca07957e3e3f807}\index{MergeSort$<$ Iterator $>$@{MergeSort$<$ Iterator $>$}!sort@{sort}}
+\index{sort@{sort}!MergeSort$<$ Iterator $>$@{MergeSort$<$ Iterator $>$}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_merge_sort_ab31924ebc850afa41ca07957e3e3f807} 
+template$<$typename Iterator$>$ \\
+virtual \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \mbox{\hyperlink{class_merge_sort}{Merge\+Sort}}$<$ Iterator $>$\+::sort (\begin{DoxyParamCaption}\item[{Iterator}]{begin}{, }\item[{Iterator}]{end}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Шаблонная функция сортировки слиянием 
+
+
+\begin{DoxyTemplParams}{Параметры шаблона}
+{\em Iterator} & -\/ любой итерируемый тип\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in,out}}  & {\em begin} & начало итерируемого объекта\\
+\hline
+\mbox{\texttt{in,out}}  & {\em end} & конец итерируемого объекта\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Структура \doxylink{struct_sort_result}{Sort\+Result} с параметрами сортировки
+\end{DoxyReturn}
+\begin{DoxyWarning}{Предупреждения}
+Не рекомендуется использовать напрямую, желательно добавлять перегрузки для отдельных типов 
+\end{DoxyWarning}
+\Hypertarget{class_merge_sort_aeb323a311162b1dea413068de132a96a}\index{MergeSort$<$ Iterator $>$@{MergeSort$<$ Iterator $>$}!sort@{sort}}
+\index{sort@{sort}!MergeSort$<$ Iterator $>$@{MergeSort$<$ Iterator $>$}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_merge_sort_aeb323a311162b1dea413068de132a96a} 
+template$<$typename Iterator$>$ \\
+\mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \mbox{\hyperlink{class_merge_sort}{Merge\+Sort}}$<$ Iterator $>$\+::sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция сортировки слиянием для вектора$<$double$>$. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in,out}}  & {\em vec} & вектор$<$double$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Структура \doxylink{struct_sort_result}{Sort\+Result} с параметрами сортировки
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{MergeSort<std::vector<double>::iterator>\ \mbox{\hyperlink{class_merge_sort_ab31924ebc850afa41ca07957e3e3f807}{sort}};}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_merge_sort_ab31924ebc850afa41ca07957e3e3f807}{sort}}.sort(arr);}
+
+\end{DoxyCode}
+ 
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Merge\+Sort.\+h\end{DoxyCompactItemize}

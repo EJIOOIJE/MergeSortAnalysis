@@ -1,0 +1,88 @@
+\doxysection{Класс Fisk\+Generator}
+\hypertarget{class_fisk_generator}{}\label{class_fisk_generator}\index{FiskGenerator@{FiskGenerator}}
+
+
+Класс генераторов чисел с распределением fisk.  
+
+
+
+
+{\ttfamily \#include $<$Fisk\+Generator.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_fisk_generator_a34815a64cb6cf681550fad2f2e1de103}{generate\+Fisk}} (double alpha, double c)
+\begin{DoxyCompactList}\small\item\em Функция генерации числа с распределением fisk. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_fisk_generator_a43a4a2d9347760ee3740d72f7fc4b37b}{generate\+Fisk\+Array}} (long long size, double alpha, double c)
+\begin{DoxyCompactList}\small\item\em Функция генерации вектора чисел с распределением fisk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс генераторов чисел с распределением fisk. 
+
+Данный класс предоставляет функционал для генерации различных типов данных с распределением fisk. 
+
+\label{doc-func-members}
+\Hypertarget{class_fisk_generator_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_fisk_generator_a34815a64cb6cf681550fad2f2e1de103}\index{FiskGenerator@{FiskGenerator}!generateFisk@{generateFisk}}
+\index{generateFisk@{generateFisk}!FiskGenerator@{FiskGenerator}}
+\doxysubsubsection{\texorpdfstring{generateFisk()}{generateFisk()}}
+{\footnotesize\ttfamily \label{class_fisk_generator_a34815a64cb6cf681550fad2f2e1de103} 
+double Fisk\+Generator\+::generate\+Fisk (\begin{DoxyParamCaption}\item[{double}]{alpha}{, }\item[{double}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Функция генерации числа с распределением fisk. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em alpha} & парамтер масштаба\\
+\hline
+\mbox{\texttt{in}}  & {\em c} & параметр формы\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Число с распределением fisk
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{FiskGenerator\ gen;}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ gen.generateFisk(alpha,\ c);}
+
+\end{DoxyCode}
+ \Hypertarget{class_fisk_generator_a43a4a2d9347760ee3740d72f7fc4b37b}\index{FiskGenerator@{FiskGenerator}!generateFiskArray@{generateFiskArray}}
+\index{generateFiskArray@{generateFiskArray}!FiskGenerator@{FiskGenerator}}
+\doxysubsubsection{\texorpdfstring{generateFiskArray()}{generateFiskArray()}}
+{\footnotesize\ttfamily \label{class_fisk_generator_a43a4a2d9347760ee3740d72f7fc4b37b} 
+std\+::vector$<$ double $>$ Fisk\+Generator\+::generate\+Fisk\+Array (\begin{DoxyParamCaption}\item[{long long}]{size}{, }\item[{double}]{alpha}{, }\item[{double}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Функция генерации вектора чисел с распределением fisk. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em size} & размер вектора\\
+\hline
+\mbox{\texttt{in}}  & {\em alpha} & парамтер масштаба\\
+\hline
+\mbox{\texttt{in}}  & {\em c} & параметр формы\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Вектор чисел с распределением fisk
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{FiskGenerator\ gen;}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ gen.generateFiskArray(size,\ alpha,\ c);}
+
+\end{DoxyCode}
+ 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Fisk\+Generator.\+h\item 
+Fisk\+Generator.\+cpp\end{DoxyCompactItemize}

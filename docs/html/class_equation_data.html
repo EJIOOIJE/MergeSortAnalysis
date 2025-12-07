@@ -1,0 +1,909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Merge Sort analysis: Класс EquationData</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome-css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Merge Sort analysis<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Анализ алгоритма сортировки Merge Sort</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_equation_data.html','','class_equation_data-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс EquationData</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для оценивания связи между временем выполнения сортировки и размером массива  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_equation_data_8h_source.html">EquationData.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a6a92f5375f5d8e3f6bc063a1a5643b1a" id="r_a6a92f5375f5d8e3f6bc063a1a5643b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a92f5375f5d8e3f6bc063a1a5643b1a">generateSample</a> ()</td></tr>
+<tr class="memdesc:a6a92f5375f5d8e3f6bc063a1a5643b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция генерирующая данные экспериментов  <br /></td></tr>
+<tr class="memitem:a9c622a6a6db528f0901e26111db7f0a3" id="r_a9c622a6a6db528f0901e26111db7f0a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c622a6a6db528f0901e26111db7f0a3">calculateLinearCoefficients</a> ()</td></tr>
+<tr class="memdesc:a9c622a6a6db528f0901e26111db7f0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вычисляющая свободный и выборочный коэффициенты уравнения связи  <br /></td></tr>
+<tr class="memitem:a1b1b1bf153875fce5ff65aaf00d3e6cd" id="r_a1b1b1bf153875fce5ff65aaf00d3e6cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b1b1bf153875fce5ff65aaf00d3e6cd">computeCorrelation</a> ()</td></tr>
+<tr class="memdesc:a1b1b1bf153875fce5ff65aaf00d3e6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вычисляющая коэффициент парной корреляции уравнения связи  <br /></td></tr>
+<tr class="memitem:aeae86443e0185ad18a65d1078f7c040a" id="r_aeae86443e0185ad18a65d1078f7c040a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeae86443e0185ad18a65d1078f7c040a">computeCoefficientOfDetermination</a> ()</td></tr>
+<tr class="memdesc:aeae86443e0185ad18a65d1078f7c040a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вычисляющая коэффициент детерминации уравнения связи  <br /></td></tr>
+<tr class="memitem:a605a0a9282a50cbe15567d14d99348c4" id="r_a605a0a9282a50cbe15567d14d99348c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a605a0a9282a50cbe15567d14d99348c4">computeElastacity</a> ()</td></tr>
+<tr class="memdesc:a605a0a9282a50cbe15567d14d99348c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вычисляющая коэффициент эластичности уравнения связи  <br /></td></tr>
+<tr class="memitem:a386d8abc191bbb140e7793df443904b1" id="r_a386d8abc191bbb140e7793df443904b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a386d8abc191bbb140e7793df443904b1">computeBeta</a> ()</td></tr>
+<tr class="memdesc:a386d8abc191bbb140e7793df443904b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вычисляющая бета коэффициент уравнения связи  <br /></td></tr>
+<tr class="memitem:af1dbe1419cf2e7a244923e993b39a686" id="r_af1dbe1419cf2e7a244923e993b39a686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1dbe1419cf2e7a244923e993b39a686">prepareData</a> ()</td></tr>
+<tr class="memdesc:af1dbe1419cf2e7a244923e993b39a686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция подготавливающая данные к отображению  <br /></td></tr>
+<tr class="memitem:ad6edc72e52820cc0df334b2720a2f83b" id="r_ad6edc72e52820cc0df334b2720a2f83b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6edc72e52820cc0df334b2720a2f83b">EquationData</a> (int Na=10000, int Nb=40000, int ACa=2, int ACb=10, int Counta=10, int Countb=15)</td></tr>
+<tr class="memdesc:ad6edc72e52820cc0df334b2720a2f83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса, принимающий минимальное и максимальное значение числа элементов в эксперементе, парамтеров масштаба и формы, числа эксперементов  <br /></td></tr>
+<tr class="memitem:a158bb32131f051e61ed0c991299156a2" id="r_a158bb32131f051e61ed0c991299156a2"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a158bb32131f051e61ed0c991299156a2">getN</a> () const</td></tr>
+<tr class="memdesc:a158bb32131f051e61ed0c991299156a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения количества эксперементов  <br /></td></tr>
+<tr class="memitem:a27c88043a09b97fc01a5963169e44cca" id="r_a27c88043a09b97fc01a5963169e44cca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27c88043a09b97fc01a5963169e44cca">setN</a> (long long value)</td></tr>
+<tr class="memdesc:a27c88043a09b97fc01a5963169e44cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая количество эксперементов  <br /></td></tr>
+<tr class="memitem:aabf40c17a9920ce45d87d9762d23f103" id="r_aabf40c17a9920ce45d87d9762d23f103"><td class="memItemLeft" align="right" valign="top">std::vector&lt; long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabf40c17a9920ce45d87d9762d23f103">getTime</a> () const</td></tr>
+<tr class="memdesc:aabf40c17a9920ce45d87d9762d23f103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка значений времени выполнения для каждого эксперемента  <br /></td></tr>
+<tr class="memitem:aadca0597f15a88df60f52e724bc47e6b" id="r_aadca0597f15a88df60f52e724bc47e6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadca0597f15a88df60f52e724bc47e6b">setTime</a> (const std::vector&lt; long long &gt; &amp;value)</td></tr>
+<tr class="memdesc:aadca0597f15a88df60f52e724bc47e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая список значений времени выполнения для каждого эксперемента  <br /></td></tr>
+<tr class="memitem:ac6845b330f7bb3d5fbf100b2902eea7f" id="r_ac6845b330f7bb3d5fbf100b2902eea7f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6845b330f7bb3d5fbf100b2902eea7f">getSize</a> () const</td></tr>
+<tr class="memdesc:ac6845b330f7bb3d5fbf100b2902eea7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка значений количества элементов для каждого эксперемента  <br /></td></tr>
+<tr class="memitem:a82bc803dc17d8c3bbaca6c3836612ce7" id="r_a82bc803dc17d8c3bbaca6c3836612ce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82bc803dc17d8c3bbaca6c3836612ce7">setSize</a> (const std::vector&lt; long long &gt; &amp;value)</td></tr>
+<tr class="memdesc:a82bc803dc17d8c3bbaca6c3836612ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая список значений количества элементов для каждого эксперемента  <br /></td></tr>
+<tr class="memitem:ae51be05681b6806c36507679ce096e09" id="r_ae51be05681b6806c36507679ce096e09"><td class="memItemLeft" align="right" valign="top">std::vector&lt; long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51be05681b6806c36507679ce096e09">getSqx</a> () const</td></tr>
+<tr class="memdesc:ae51be05681b6806c36507679ce096e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка значений квадрата количества элементов для каждого эксперемента  <br /></td></tr>
+<tr class="memitem:aaa850c4debb522a30c519445165a2785" id="r_aaa850c4debb522a30c519445165a2785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa850c4debb522a30c519445165a2785">setSqx</a> (const std::vector&lt; long long &gt; &amp;value)</td></tr>
+<tr class="memdesc:aaa850c4debb522a30c519445165a2785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая список значений квадрата количества элементов для каждого эксперемента  <br /></td></tr>
+<tr class="memitem:a7b5934713d60c28365df2b8129c6587d" id="r_a7b5934713d60c28365df2b8129c6587d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b5934713d60c28365df2b8129c6587d">getXmulty</a> () const</td></tr>
+<tr class="memdesc:a7b5934713d60c28365df2b8129c6587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка значений времени выполнения на количество элементов для каждого эксперемента  <br /></td></tr>
+<tr class="memitem:ad4c9d1dc7fbb35686be56ca1d5dd9aea" id="r_ad4c9d1dc7fbb35686be56ca1d5dd9aea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4c9d1dc7fbb35686be56ca1d5dd9aea">setXmulty</a> (const std::vector&lt; long long &gt; &amp;value)</td></tr>
+<tr class="memdesc:ad4c9d1dc7fbb35686be56ca1d5dd9aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая список значений времени выполнения на количество элементов для каждого эксперемента  <br /></td></tr>
+<tr class="memitem:a429c3b92c6820d8946dc099b426621cb" id="r_a429c3b92c6820d8946dc099b426621cb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a429c3b92c6820d8946dc099b426621cb">getA0</a> () const</td></tr>
+<tr class="memdesc:a429c3b92c6820d8946dc099b426621cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения свободного коэффициента уравнения связи  <br /></td></tr>
+<tr class="memitem:abdb3d1bf3d5299c31e2b7c3ce168b8f4" id="r_abdb3d1bf3d5299c31e2b7c3ce168b8f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdb3d1bf3d5299c31e2b7c3ce168b8f4">setA0</a> (double value)</td></tr>
+<tr class="memdesc:abdb3d1bf3d5299c31e2b7c3ce168b8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая свободный коэффициент уравнения связи  <br /></td></tr>
+<tr class="memitem:a025cbbdaff416bc9de0614861fa2f674" id="r_a025cbbdaff416bc9de0614861fa2f674"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a025cbbdaff416bc9de0614861fa2f674">getA1</a> () const</td></tr>
+<tr class="memdesc:a025cbbdaff416bc9de0614861fa2f674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения выборочного коэффициента уравнения связи  <br /></td></tr>
+<tr class="memitem:a44853f7c283d26a174367a5660342080" id="r_a44853f7c283d26a174367a5660342080"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44853f7c283d26a174367a5660342080">setA1</a> (double value)</td></tr>
+<tr class="memdesc:a44853f7c283d26a174367a5660342080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая выборочный коэффициент уравнения связи  <br /></td></tr>
+<tr class="memitem:a3ff9f06564599068f78e0d000474318c" id="r_a3ff9f06564599068f78e0d000474318c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ff9f06564599068f78e0d000474318c">getCorr</a> () const</td></tr>
+<tr class="memdesc:a3ff9f06564599068f78e0d000474318c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения коэффициента парной корреляции уравнения связи  <br /></td></tr>
+<tr class="memitem:a8e2ac215527489d6915d85dab864c818" id="r_a8e2ac215527489d6915d85dab864c818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e2ac215527489d6915d85dab864c818">setCorr</a> (double value)</td></tr>
+<tr class="memdesc:a8e2ac215527489d6915d85dab864c818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая коэффициент парной корреляции уравнения связи  <br /></td></tr>
+<tr class="memitem:ad8a3fd15476b426fc880401c41db1206" id="r_ad8a3fd15476b426fc880401c41db1206"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8a3fd15476b426fc880401c41db1206">getDet</a> () const</td></tr>
+<tr class="memdesc:ad8a3fd15476b426fc880401c41db1206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения коэффициента детерминации уравнения связи  <br /></td></tr>
+<tr class="memitem:ad7c3143da8d6edfc04d7ebdba92a0102" id="r_ad7c3143da8d6edfc04d7ebdba92a0102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7c3143da8d6edfc04d7ebdba92a0102">setDet</a> (double value)</td></tr>
+<tr class="memdesc:ad7c3143da8d6edfc04d7ebdba92a0102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая коэффициент детерминации уравнения связи  <br /></td></tr>
+<tr class="memitem:a22e7a94c838fed3a7d74d2545f096da1" id="r_a22e7a94c838fed3a7d74d2545f096da1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22e7a94c838fed3a7d74d2545f096da1">getElast</a> () const</td></tr>
+<tr class="memdesc:a22e7a94c838fed3a7d74d2545f096da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения коэффициента эластичности уравнения связи  <br /></td></tr>
+<tr class="memitem:a07b3222fd8e04933097a80ecabe9b0ef" id="r_a07b3222fd8e04933097a80ecabe9b0ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07b3222fd8e04933097a80ecabe9b0ef">setElast</a> (double value)</td></tr>
+<tr class="memdesc:a07b3222fd8e04933097a80ecabe9b0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая коэффициент эластичности уравнения связи  <br /></td></tr>
+<tr class="memitem:ad00e8190f8f95f1cafbe1b596b574fbd" id="r_ad00e8190f8f95f1cafbe1b596b574fbd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad00e8190f8f95f1cafbe1b596b574fbd">getBeta</a> () const</td></tr>
+<tr class="memdesc:ad00e8190f8f95f1cafbe1b596b574fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения бета коэффициента уравнения связи  <br /></td></tr>
+<tr class="memitem:a7fc4c37994226557ab4d72ad2d80a520" id="r_a7fc4c37994226557ab4d72ad2d80a520"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fc4c37994226557ab4d72ad2d80a520">setBeta</a> (double value)</td></tr>
+<tr class="memdesc:a7fc4c37994226557ab4d72ad2d80a520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливающая бета коэффициент уравнения связи  <br /></td></tr>
+<tr class="memitem:a4e7eb38508f2a35e37e13195a81de8df" id="r_a4e7eb38508f2a35e37e13195a81de8df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e7eb38508f2a35e37e13195a81de8df">plotDataAndRegression</a> ()</td></tr>
+<tr class="memdesc:a4e7eb38508f2a35e37e13195a81de8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция подготавливающая график с данными к отображению  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a5e49ee12038c434fe1d92d0954dda6a1" id="r_a5e49ee12038c434fe1d92d0954dda6a1"><td class="memItemLeft" align="right" valign="top"><a id="a5e49ee12038c434fe1d92d0954dda6a1" name="a5e49ee12038c434fe1d92d0954dda6a1"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>imagePath</b></td></tr>
+<tr class="memdesc:a5e49ee12038c434fe1d92d0954dda6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к файлу с графиком <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для оценивания связи между временем выполнения сортировки и размером массива </p>
+<p>Данный класс предоставляет функционал для оценивания связи между временем выполнения программного алгоритма (временной параметр T) и размером задачи (емкостной параметр V). </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ad6edc72e52820cc0df334b2720a2f83b" name="ad6edc72e52820cc0df334b2720a2f83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6edc72e52820cc0df334b2720a2f83b">&#9670;&#160;</a></span>EquationData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EquationData::EquationData </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>Na</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10000</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>Nb</em></span><span class="paramdefsep"> = </span><span class="paramdefval">40000</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ACa</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ACb</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>Counta</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>Countb</em></span><span class="paramdefsep"> = </span><span class="paramdefval">15</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса, принимающий минимальное и максимальное значение числа элементов в эксперементе, парамтеров масштаба и формы, числа эксперементов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Na</td><td>минимальное число элементов в эксперементе</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Nb</td><td>максимальное число элементов в эксперементе</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ACa</td><td>минимальное значение парамтеров масштаба и формы</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ACb</td><td>максимальное значение парамтеров масштаба и формы</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Counta</td><td>минимальное число эксперементов</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Countb</td><td>максимальное число эксперементов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a9c622a6a6db528f0901e26111db7f0a3" name="a9c622a6a6db528f0901e26111db7f0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c622a6a6db528f0901e26111db7f0a3">&#9670;&#160;</a></span>calculateLinearCoefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::calculateLinearCoefficients </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вычисляющая свободный и выборочный коэффициенты уравнения связи </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Функция должна быть использованна после вызова generateSample </dd></dl>
+
+</div>
+</div>
+<a id="a386d8abc191bbb140e7793df443904b1" name="a386d8abc191bbb140e7793df443904b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386d8abc191bbb140e7793df443904b1">&#9670;&#160;</a></span>computeBeta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::computeBeta </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вычисляющая бета коэффициент уравнения связи </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Функция должна быть использованна после вызова generateSample и calculateLinearCoefficients </dd></dl>
+
+</div>
+</div>
+<a id="aeae86443e0185ad18a65d1078f7c040a" name="aeae86443e0185ad18a65d1078f7c040a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae86443e0185ad18a65d1078f7c040a">&#9670;&#160;</a></span>computeCoefficientOfDetermination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::computeCoefficientOfDetermination </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вычисляющая коэффициент детерминации уравнения связи </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Функция должна быть использованна после вызова generateSample </dd></dl>
+
+</div>
+</div>
+<a id="a1b1b1bf153875fce5ff65aaf00d3e6cd" name="a1b1b1bf153875fce5ff65aaf00d3e6cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1b1bf153875fce5ff65aaf00d3e6cd">&#9670;&#160;</a></span>computeCorrelation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::computeCorrelation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вычисляющая коэффициент парной корреляции уравнения связи </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Функция должна быть использованна после вызова generateSample </dd></dl>
+
+</div>
+</div>
+<a id="a605a0a9282a50cbe15567d14d99348c4" name="a605a0a9282a50cbe15567d14d99348c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a605a0a9282a50cbe15567d14d99348c4">&#9670;&#160;</a></span>computeElastacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::computeElastacity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вычисляющая коэффициент эластичности уравнения связи </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Функция должна быть использованна после вызова generateSample и calculateLinearCoefficients </dd></dl>
+
+</div>
+</div>
+<a id="a6a92f5375f5d8e3f6bc063a1a5643b1a" name="a6a92f5375f5d8e3f6bc063a1a5643b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a92f5375f5d8e3f6bc063a1a5643b1a">&#9670;&#160;</a></span>generateSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::generateSample </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция генерирующая данные экспериментов </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Функция должна быть использованна первой, после создания экземаляра класса </dd></dl>
+
+</div>
+</div>
+<a id="a429c3b92c6820d8946dc099b426621cb" name="a429c3b92c6820d8946dc099b426621cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429c3b92c6820d8946dc099b426621cb">&#9670;&#160;</a></span>getA0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EquationData::getA0 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения свободного коэффициента уравнения связи </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Свободный коэффициент уравнения связи </dd></dl>
+
+</div>
+</div>
+<a id="a025cbbdaff416bc9de0614861fa2f674" name="a025cbbdaff416bc9de0614861fa2f674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a025cbbdaff416bc9de0614861fa2f674">&#9670;&#160;</a></span>getA1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EquationData::getA1 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения выборочного коэффициента уравнения связи </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Выборочный коэффициент уравнения связи </dd></dl>
+
+</div>
+</div>
+<a id="ad00e8190f8f95f1cafbe1b596b574fbd" name="ad00e8190f8f95f1cafbe1b596b574fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00e8190f8f95f1cafbe1b596b574fbd">&#9670;&#160;</a></span>getBeta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EquationData::getBeta </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения бета коэффициента уравнения связи </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Бета коэффициент уравнения связи </dd></dl>
+
+</div>
+</div>
+<a id="a3ff9f06564599068f78e0d000474318c" name="a3ff9f06564599068f78e0d000474318c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff9f06564599068f78e0d000474318c">&#9670;&#160;</a></span>getCorr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EquationData::getCorr </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения коэффициента парной корреляции уравнения связи </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Коэффициент парной корреляции уравнения связи </dd></dl>
+
+</div>
+</div>
+<a id="ad8a3fd15476b426fc880401c41db1206" name="ad8a3fd15476b426fc880401c41db1206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a3fd15476b426fc880401c41db1206">&#9670;&#160;</a></span>getDet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EquationData::getDet </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения коэффициента детерминации уравнения связи </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Коэффициент детерминации уравнения связи </dd></dl>
+
+</div>
+</div>
+<a id="a22e7a94c838fed3a7d74d2545f096da1" name="a22e7a94c838fed3a7d74d2545f096da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e7a94c838fed3a7d74d2545f096da1">&#9670;&#160;</a></span>getElast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EquationData::getElast </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения коэффициента эластичности уравнения связи </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Коэффициент эластичности уравнения связи </dd></dl>
+
+</div>
+</div>
+<a id="a158bb32131f051e61ed0c991299156a2" name="a158bb32131f051e61ed0c991299156a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a158bb32131f051e61ed0c991299156a2">&#9670;&#160;</a></span>getN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long EquationData::getN </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения количества эксперементов </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество эксперементов </dd></dl>
+
+</div>
+</div>
+<a id="ac6845b330f7bb3d5fbf100b2902eea7f" name="ac6845b330f7bb3d5fbf100b2902eea7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6845b330f7bb3d5fbf100b2902eea7f">&#9670;&#160;</a></span>getSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; long long &gt; EquationData::getSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка значений количества элементов для каждого эксперемента </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список значений количества элементов для каждого эксперемента </dd></dl>
+
+</div>
+</div>
+<a id="ae51be05681b6806c36507679ce096e09" name="ae51be05681b6806c36507679ce096e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51be05681b6806c36507679ce096e09">&#9670;&#160;</a></span>getSqx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; long long &gt; EquationData::getSqx </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка значений квадрата количества элементов для каждого эксперемента </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список значений квадрата количества элементов для каждого эксперемента </dd></dl>
+
+</div>
+</div>
+<a id="aabf40c17a9920ce45d87d9762d23f103" name="aabf40c17a9920ce45d87d9762d23f103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf40c17a9920ce45d87d9762d23f103">&#9670;&#160;</a></span>getTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; long long &gt; EquationData::getTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка значений времени выполнения для каждого эксперемента </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список значений времени выполнения для каждого эксперемента </dd></dl>
+
+</div>
+</div>
+<a id="a7b5934713d60c28365df2b8129c6587d" name="a7b5934713d60c28365df2b8129c6587d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5934713d60c28365df2b8129c6587d">&#9670;&#160;</a></span>getXmulty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; long long &gt; EquationData::getXmulty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка значений времени выполнения на количество элементов для каждого эксперемента </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список значений времени выполнения на количество элементов для каждого эксперемента </dd></dl>
+
+</div>
+</div>
+<a id="a4e7eb38508f2a35e37e13195a81de8df" name="a4e7eb38508f2a35e37e13195a81de8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7eb38508f2a35e37e13195a81de8df">&#9670;&#160;</a></span>plotDataAndRegression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::plotDataAndRegression </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция подготавливающая график с данными к отображению </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Функция должна быть использованна после вызова prepareData </dd></dl>
+
+</div>
+</div>
+<a id="af1dbe1419cf2e7a244923e993b39a686" name="af1dbe1419cf2e7a244923e993b39a686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1dbe1419cf2e7a244923e993b39a686">&#9670;&#160;</a></span>prepareData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::prepareData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция подготавливающая данные к отображению </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Функция должна быть использованна после вызова generateSample, calculateLinearCoefficients, computeCorrelation, computeCoefficientOfDetermination, computeElastacity, computeBeta </dd></dl>
+
+</div>
+</div>
+<a id="abdb3d1bf3d5299c31e2b7c3ce168b8f4" name="abdb3d1bf3d5299c31e2b7c3ce168b8f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb3d1bf3d5299c31e2b7c3ce168b8f4">&#9670;&#160;</a></span>setA0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setA0 </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая свободный коэффициент уравнения связи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>свободный коэффициент уравнения связи </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44853f7c283d26a174367a5660342080" name="a44853f7c283d26a174367a5660342080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44853f7c283d26a174367a5660342080">&#9670;&#160;</a></span>setA1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setA1 </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая выборочный коэффициент уравнения связи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>выборочный коэффициент уравнения связи </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7fc4c37994226557ab4d72ad2d80a520" name="a7fc4c37994226557ab4d72ad2d80a520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc4c37994226557ab4d72ad2d80a520">&#9670;&#160;</a></span>setBeta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setBeta </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая бета коэффициент уравнения связи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>бета коэффициент уравнения связи </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e2ac215527489d6915d85dab864c818" name="a8e2ac215527489d6915d85dab864c818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2ac215527489d6915d85dab864c818">&#9670;&#160;</a></span>setCorr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setCorr </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая коэффициент парной корреляции уравнения связи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>коэффициент парной корреляции уравнения связи </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7c3143da8d6edfc04d7ebdba92a0102" name="ad7c3143da8d6edfc04d7ebdba92a0102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c3143da8d6edfc04d7ebdba92a0102">&#9670;&#160;</a></span>setDet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setDet </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая коэффициент детерминации уравнения связи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>коэффициент детерминации уравнения связи </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a07b3222fd8e04933097a80ecabe9b0ef" name="a07b3222fd8e04933097a80ecabe9b0ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b3222fd8e04933097a80ecabe9b0ef">&#9670;&#160;</a></span>setElast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setElast </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая коэффициент эластичности уравнения связи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>коэффициент эластичности уравнения связи </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27c88043a09b97fc01a5963169e44cca" name="a27c88043a09b97fc01a5963169e44cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c88043a09b97fc01a5963169e44cca">&#9670;&#160;</a></span>setN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setN </td>
+          <td>(</td>
+          <td class="paramtype">long long</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая количество эксперементов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>количество эксперементов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82bc803dc17d8c3bbaca6c3836612ce7" name="a82bc803dc17d8c3bbaca6c3836612ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82bc803dc17d8c3bbaca6c3836612ce7">&#9670;&#160;</a></span>setSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setSize </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; long long &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая список значений количества элементов для каждого эксперемента </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>список значений количества элементов для каждого эксперемента </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa850c4debb522a30c519445165a2785" name="aaa850c4debb522a30c519445165a2785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa850c4debb522a30c519445165a2785">&#9670;&#160;</a></span>setSqx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setSqx </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; long long &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая список значений квадрата количества элементов для каждого эксперемента </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>список значений квадрата количества элементов для каждого эксперемента </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aadca0597f15a88df60f52e724bc47e6b" name="aadca0597f15a88df60f52e724bc47e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadca0597f15a88df60f52e724bc47e6b">&#9670;&#160;</a></span>setTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setTime </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; long long &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая список значений времени выполнения для каждого эксперемента </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>список значений времени выполнения для каждого эксперемента </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4c9d1dc7fbb35686be56ca1d5dd9aea" name="ad4c9d1dc7fbb35686be56ca1d5dd9aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c9d1dc7fbb35686be56ca1d5dd9aea">&#9670;&#160;</a></span>setXmulty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EquationData::setXmulty </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; long long &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция устанавливающая список значений времени выполнения на количество элементов для каждого эксперемента </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>список значений времени выполнения на количество элементов для каждого эксперемента </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="_equation_data_8h_source.html">EquationData.h</a></li>
+<li><b>EquationData.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_equation_data.html">EquationData</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

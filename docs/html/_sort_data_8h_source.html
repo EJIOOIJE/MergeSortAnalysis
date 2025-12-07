@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Merge Sort analysis: Исходный файл SortData.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome-css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Merge Sort analysis<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Анализ алгоритма сортировки Merge Sort</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_sort_data_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SortData.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef SORT_DATA_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define SORT_DATA_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;SortableArray.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;SortResult.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;SortParams.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_sort_data.html">   15</a></span><span class="keyword">class </span>SortData : <span class="keyword">public</span> <a class="code hl_class" href="class_serializable.html">Serializable</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    SortData();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    SortData(<span class="keyword">const</span> <a class="code hl_class" href="class_sortable_array.html">SortableArray</a>&amp; first, <span class="keyword">const</span> <a class="code hl_class" href="class_sortable_array.html">SortableArray</a>&amp; second, <span class="keyword">const</span> <a class="code hl_struct" href="struct_sort_result.html">SortResult</a>&amp; result, <span class="keyword">const</span> <a class="code hl_struct" href="struct_sort_params.html">SortParams</a>&amp; params);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sort_data.html#ac2bb7cc85b42666279ac5055a9709b2a">setFirst</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_sortable_array.html">SortableArray</a>&amp; arr);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sort_data.html#a75d14c7bae97b8af38419bfc28a93b84">setSecond</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_sortable_array.html">SortableArray</a>&amp; arr);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_sortable_array.html">SortableArray</a>&amp; <a class="code hl_function" href="class_sort_data.html#a778fef7f36d35bc33083e12df6598821">getFirst</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_sortable_array.html">SortableArray</a>&amp; <a class="code hl_function" href="class_sort_data.html#a8d60a49b175a7391f7a3095f6dd52c15">getSecond</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sort_data.html#aa96677a8420a02aba127666bef40f6c4">setSortResult</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_sort_result.html">SortResult</a>&amp; result);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">const</span> <a class="code hl_struct" href="struct_sort_result.html">SortResult</a>&amp; <a class="code hl_function" href="class_sort_data.html#a0b63ff1d52a773ae489549e0c9ca3f72">getSortResult</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sort_data.html#a2b913eacaedfd555bc509aa3ee13d7cc">setSortParams</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_sort_params.html">SortParams</a>&amp; params);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">const</span> <a class="code hl_struct" href="struct_sort_params.html">SortParams</a>&amp; <a class="code hl_function" href="class_sort_data.html#aa38134702efcc93bc233010439a19ef6">getSortParams</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    std::string <a class="code hl_function" href="class_sort_data.html#ac8176dbf417c009da9ee97640ca9c7e6">getFileName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::string <a class="code hl_function" href="class_sort_data.html#ab29ba4f6202d46e4ab611d8d87c115db">getFullName</a>(std::string&amp; fileName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    json <a class="code hl_function" href="class_sort_data.html#ac5a852c835f0edd07aec274414e8082c">toJson</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sort_data.html#a949d241eb77f81d99f9b818fbd7a02b8">fromJson</a>(<span class="keyword">const</span> json&amp; j) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <a class="code hl_class" href="class_sortable_array.html">SortableArray</a> firstArray;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_class" href="class_sortable_array.html">SortableArray</a> secondArray;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_struct" href="struct_sort_result.html">SortResult</a> sortResult;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <a class="code hl_struct" href="struct_sort_params.html">SortParams</a> sortParams;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">#endif </span><span class="comment">// SORT_DATA_H</span></div>
+<div class="ttc" id="aclass_serializable_html"><div class="ttname"><a href="class_serializable.html">Serializable</a></div><div class="ttdoc">Класс для сериализации и сохранения</div><div class="ttdef"><b>Определения</b> Serializable.h:12</div></div>
+<div class="ttc" id="aclass_sort_data_html_a0b63ff1d52a773ae489549e0c9ca3f72"><div class="ttname"><a href="class_sort_data.html#a0b63ff1d52a773ae489549e0c9ca3f72">SortData::getSortResult</a></div><div class="ttdeci">const SortResult &amp; getSortResult() const</div><div class="ttdoc">Функция получения характеристик выполнения сортировки</div><div class="ttdef"><b>Определения</b> SortData.cpp:42</div></div>
+<div class="ttc" id="aclass_sort_data_html_a2b913eacaedfd555bc509aa3ee13d7cc"><div class="ttname"><a href="class_sort_data.html#a2b913eacaedfd555bc509aa3ee13d7cc">SortData::setSortParams</a></div><div class="ttdeci">void setSortParams(const SortParams &amp;params)</div><div class="ttdoc">Функция устанавливающая параметры выполнения сортировки</div><div class="ttdef"><b>Определения</b> SortData.cpp:46</div></div>
+<div class="ttc" id="aclass_sort_data_html_a75d14c7bae97b8af38419bfc28a93b84"><div class="ttname"><a href="class_sort_data.html#a75d14c7bae97b8af38419bfc28a93b84">SortData::setSecond</a></div><div class="ttdeci">void setSecond(const SortableArray &amp;arr)</div><div class="ttdoc">Функция устанавливающая отсортированный массив чисел</div><div class="ttdef"><b>Определения</b> SortData.cpp:26</div></div>
+<div class="ttc" id="aclass_sort_data_html_a778fef7f36d35bc33083e12df6598821"><div class="ttname"><a href="class_sort_data.html#a778fef7f36d35bc33083e12df6598821">SortData::getFirst</a></div><div class="ttdeci">const SortableArray &amp; getFirst() const</div><div class="ttdoc">Функция получения изначального массива чисел</div><div class="ttdef"><b>Определения</b> SortData.cpp:30</div></div>
+<div class="ttc" id="aclass_sort_data_html_a8d60a49b175a7391f7a3095f6dd52c15"><div class="ttname"><a href="class_sort_data.html#a8d60a49b175a7391f7a3095f6dd52c15">SortData::getSecond</a></div><div class="ttdeci">const SortableArray &amp; getSecond() const</div><div class="ttdoc">Функция получения отсортированного массива чисел</div><div class="ttdef"><b>Определения</b> SortData.cpp:34</div></div>
+<div class="ttc" id="aclass_sort_data_html_a949d241eb77f81d99f9b818fbd7a02b8"><div class="ttname"><a href="class_sort_data.html#a949d241eb77f81d99f9b818fbd7a02b8">SortData::fromJson</a></div><div class="ttdeci">void fromJson(const json &amp;j) override</div><div class="ttdoc">Функция преобразования JSON в объект класса</div><div class="ttdef"><b>Определения</b> SortData.cpp:88</div></div>
+<div class="ttc" id="aclass_sort_data_html_aa38134702efcc93bc233010439a19ef6"><div class="ttname"><a href="class_sort_data.html#aa38134702efcc93bc233010439a19ef6">SortData::getSortParams</a></div><div class="ttdeci">const SortParams &amp; getSortParams() const</div><div class="ttdoc">Функция получения параметров выполнения сортировки</div><div class="ttdef"><b>Определения</b> SortData.cpp:50</div></div>
+<div class="ttc" id="aclass_sort_data_html_aa96677a8420a02aba127666bef40f6c4"><div class="ttname"><a href="class_sort_data.html#aa96677a8420a02aba127666bef40f6c4">SortData::setSortResult</a></div><div class="ttdeci">void setSortResult(const SortResult &amp;result)</div><div class="ttdoc">Функция устанавливающая характеристики выполнения сортировки</div><div class="ttdef"><b>Определения</b> SortData.cpp:38</div></div>
+<div class="ttc" id="aclass_sort_data_html_ab29ba4f6202d46e4ab611d8d87c115db"><div class="ttname"><a href="class_sort_data.html#ab29ba4f6202d46e4ab611d8d87c115db">SortData::getFullName</a></div><div class="ttdeci">std::string getFullName(std::string &amp;fileName) const</div><div class="ttdoc">Функция получения полного пути к файлу для сохранения</div><div class="ttdef"><b>Определения</b> SortData.cpp:67</div></div>
+<div class="ttc" id="aclass_sort_data_html_ac2bb7cc85b42666279ac5055a9709b2a"><div class="ttname"><a href="class_sort_data.html#ac2bb7cc85b42666279ac5055a9709b2a">SortData::setFirst</a></div><div class="ttdeci">void setFirst(const SortableArray &amp;arr)</div><div class="ttdoc">Функция устанавливающая изначальный массив чисел</div><div class="ttdef"><b>Определения</b> SortData.cpp:22</div></div>
+<div class="ttc" id="aclass_sort_data_html_ac5a852c835f0edd07aec274414e8082c"><div class="ttname"><a href="class_sort_data.html#ac5a852c835f0edd07aec274414e8082c">SortData::toJson</a></div><div class="ttdeci">json toJson() const override</div><div class="ttdoc">Функция преобразования объекта класса в JSON.</div><div class="ttdef"><b>Определения</b> SortData.cpp:71</div></div>
+<div class="ttc" id="aclass_sort_data_html_ac8176dbf417c009da9ee97640ca9c7e6"><div class="ttname"><a href="class_sort_data.html#ac8176dbf417c009da9ee97640ca9c7e6">SortData::getFileName</a></div><div class="ttdeci">std::string getFileName() const</div><div class="ttdoc">Функция получения имени файла для сохранения</div><div class="ttdef"><b>Определения</b> SortData.cpp:54</div></div>
+<div class="ttc" id="aclass_sortable_array_html"><div class="ttname"><a href="class_sortable_array.html">SortableArray</a></div><div class="ttdoc">Класс для хранения массива чисел</div><div class="ttdef"><b>Определения</b> SortableArray.h:13</div></div>
+<div class="ttc" id="astruct_sort_params_html"><div class="ttname"><a href="struct_sort_params.html">SortParams</a></div><div class="ttdoc">Структура с параметрами сортировки</div><div class="ttdef"><b>Определения</b> SortParams.h:10</div></div>
+<div class="ttc" id="astruct_sort_result_html"><div class="ttname"><a href="struct_sort_result.html">SortResult</a></div><div class="ttdoc">Структура с результатами сортировки</div><div class="ttdef"><b>Определения</b> SortResult.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>SortData.h</b></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

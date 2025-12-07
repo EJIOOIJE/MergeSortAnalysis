@@ -3,22 +3,22 @@
 #include "Generators.h"
 
 /**
-    \brief Класс для операций с числами
+    \brief РљР»Р°СЃСЃ РґР»СЏ РѕРїРµСЂР°С†РёР№ СЃ С‡РёСЃР»Р°РјРё
 
-    Данный класс предоставляет функционал для различных операций с числами.
+    Р”Р°РЅРЅС‹Р№ РєР»Р°СЃСЃ РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµС‚ С„СѓРЅРєС†РёРѕРЅР°Р» РґР»СЏ СЂР°Р·Р»РёС‡РЅС‹С… РѕРїРµСЂР°С†РёР№ СЃ С‡РёСЃР»Р°РјРё.
 */
 class Algorithm {
 public:
     virtual ~Algorithm() = default;
     
     /**
-        \brief Функция генерации числа с распределением fisk
+        \brief Р¤СѓРЅРєС†РёСЏ РіРµРЅРµСЂР°С†РёРё С‡РёСЃР»Р° СЃ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµРј fisk
 
-        \param [in] alpha парамтер масштаба
+        \param [in] alpha РїР°СЂР°РјС‚РµСЂ РјР°СЃС€С‚Р°Р±Р°
 
-        \param [in] c параметр формы
+        \param [in] c РїР°СЂР°РјРµС‚СЂ С„РѕСЂРјС‹
 
-        \return Число с распределением fisk
+        \return Р§РёСЃР»Рѕ СЃ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµРј fisk
 
         \code{cpp}
         Algorithm::generateFisk(a, c)
@@ -27,15 +27,15 @@ public:
     static double generateFisk(double alpha, double c);
 
     /**
-        \brief Функция генерации вектора чисел с распределением fisk
+        \brief Р¤СѓРЅРєС†РёСЏ РіРµРЅРµСЂР°С†РёРё РІРµРєС‚РѕСЂР° С‡РёСЃРµР» СЃ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµРј fisk
 
-        \param [in] size размер вектора
+        \param [in] size СЂР°Р·РјРµСЂ РІРµРєС‚РѕСЂР°
 
-        \param [in] alpha парамтер масштаба
+        \param [in] alpha РїР°СЂР°РјС‚РµСЂ РјР°СЃС€С‚Р°Р±Р°
 
-        \param [in] c параметр формы
+        \param [in] c РїР°СЂР°РјРµС‚СЂ С„РѕСЂРјС‹
 
-        \return Вектор чисел с распределением fisk
+        \return Р’РµРєС‚РѕСЂ С‡РёСЃРµР» СЃ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµРј fisk
 
         \code{cpp}
         Algorithm::generateFiskArray(n, a, c)
@@ -44,11 +44,11 @@ public:
     static std::vector<double> generateFiskArray(long long size, double alpha, double c);
 
     /**
-        \brief Функция сортировки слиянием для вектора<double>
+        \brief Р¤СѓРЅРєС†РёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё СЃР»РёСЏРЅРёРµРј РґР»СЏ РІРµРєС‚РѕСЂР°<double>
 
-        \param [in,out] arr вектор<double>
+        \param [in,out] arr РІРµРєС‚РѕСЂ<double>
 
-        \return Структура SortResult с параметрами сортировки
+        \return РЎС‚СЂСѓРєС‚СѓСЂР° SortResult СЃ РїР°СЂР°РјРµС‚СЂР°РјРё СЃРѕСЂС‚РёСЂРѕРІРєРё
 
         \code{cpp}
         Algorithm::mergeSort(vector);

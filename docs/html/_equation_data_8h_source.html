@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Merge Sort analysis: Исходный файл EquationData.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome-css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Merge Sort analysis<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Анализ алгоритма сортировки Merge Sort</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_equation_data_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">EquationData.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef EQUATIONDATA_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define EQUATIONDATA_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;chrono&gt;</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;random&gt;</span>  </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_equation_data.html">   14</a></span><span class="keyword">class </span><a class="code hl_function" href="class_equation_data.html#ad6edc72e52820cc0df334b2720a2f83b">EquationData</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">long</span> <span class="keywordtype">long</span> N;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    std::vector&lt;long long&gt; time;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::vector&lt;long long&gt; size;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::vector&lt;long long&gt; sqx;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::vector&lt;long long&gt; xmulty;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::vector&lt;long long&gt; graphTime;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::vector&lt;long long&gt; graphSize;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">double</span> a0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">double</span> a1;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">double</span> corr;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">double</span> det;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">double</span> elast;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">double</span> beta;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">long</span> <span class="keywordtype">long</span> totalTimeMsSum = 0;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">long</span> <span class="keywordtype">long</span> totalSizeSum = 0;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">long</span> <span class="keywordtype">long</span> totalSqxSum = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">long</span> <span class="keywordtype">long</span> totalXmultySum = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    std::mt19937 rng;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    std::uniform_int_distribution&lt;long long&gt; distN;        </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    std::uniform_int_distribution&lt;int&gt; distAC;            </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    std::uniform_int_distribution&lt;long long&gt; distNCount;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_equation_data.html#a5e49ee12038c434fe1d92d0954dda6a1">   45</a></span>    std::string <a class="code hl_variable" href="class_equation_data.html#a5e49ee12038c434fe1d92d0954dda6a1">imagePath</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a6a92f5375f5d8e3f6bc063a1a5643b1a">generateSample</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a9c622a6a6db528f0901e26111db7f0a3">calculateLinearCoefficients</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a1b1b1bf153875fce5ff65aaf00d3e6cd">computeCorrelation</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#aeae86443e0185ad18a65d1078f7c040a">computeCoefficientOfDetermination</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a605a0a9282a50cbe15567d14d99348c4">computeElastacity</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a386d8abc191bbb140e7793df443904b1">computeBeta</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#af1dbe1419cf2e7a244923e993b39a686">prepareData</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_function" href="class_equation_data.html#ad6edc72e52820cc0df334b2720a2f83b">EquationData</a>(</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordtype">int</span> Na = 10000,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordtype">int</span> Nb = 40000,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordtype">int</span> ACa = 2,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordtype">int</span> ACb = 10,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordtype">int</span> Counta = 10,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordtype">int</span> Countb = 15</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    );</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code hl_function" href="class_equation_data.html#a158bb32131f051e61ed0c991299156a2">getN</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a27c88043a09b97fc01a5963169e44cca">setN</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> value);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    std::vector&lt;long long&gt; <a class="code hl_function" href="class_equation_data.html#aabf40c17a9920ce45d87d9762d23f103">getTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#aadca0597f15a88df60f52e724bc47e6b">setTime</a>(<span class="keyword">const</span> std::vector&lt;long long&gt;&amp; value);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    std::vector&lt;long long&gt; <a class="code hl_function" href="class_equation_data.html#ac6845b330f7bb3d5fbf100b2902eea7f">getSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a82bc803dc17d8c3bbaca6c3836612ce7">setSize</a>(<span class="keyword">const</span> std::vector&lt;long long&gt;&amp; value);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    std::vector&lt;long long&gt; <a class="code hl_function" href="class_equation_data.html#ae51be05681b6806c36507679ce096e09">getSqx</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#aaa850c4debb522a30c519445165a2785">setSqx</a>(<span class="keyword">const</span> std::vector&lt;long long&gt;&amp; value);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    std::vector&lt;long long&gt; <a class="code hl_function" href="class_equation_data.html#a7b5934713d60c28365df2b8129c6587d">getXmulty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#ad4c9d1dc7fbb35686be56ca1d5dd9aea">setXmulty</a>(<span class="keyword">const</span> std::vector&lt;long long&gt;&amp; value);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_equation_data.html#a429c3b92c6820d8946dc099b426621cb">getA0</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#abdb3d1bf3d5299c31e2b7c3ce168b8f4">setA0</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_equation_data.html#a025cbbdaff416bc9de0614861fa2f674">getA1</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a44853f7c283d26a174367a5660342080">setA1</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_equation_data.html#a3ff9f06564599068f78e0d000474318c">getCorr</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a8e2ac215527489d6915d85dab864c818">setCorr</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_equation_data.html#ad8a3fd15476b426fc880401c41db1206">getDet</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#ad7c3143da8d6edfc04d7ebdba92a0102">setDet</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_equation_data.html#a22e7a94c838fed3a7d74d2545f096da1">getElast</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a07b3222fd8e04933097a80ecabe9b0ef">setElast</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_equation_data.html#ad00e8190f8f95f1cafbe1b596b574fbd">getBeta</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a7fc4c37994226557ab4d72ad2d80a520">setBeta</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_equation_data.html#a4e7eb38508f2a35e37e13195a81de8df">plotDataAndRegression</a>();</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>};</div>
+</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">#endif </span><span class="comment">// EQUATIONDATA_H</span></div>
+<div class="ttc" id="aclass_equation_data_html_a025cbbdaff416bc9de0614861fa2f674"><div class="ttname"><a href="class_equation_data.html#a025cbbdaff416bc9de0614861fa2f674">EquationData::getA1</a></div><div class="ttdeci">double getA1() const</div><div class="ttdoc">Функция получения выборочного коэффициента уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:90</div></div>
+<div class="ttc" id="aclass_equation_data_html_a07b3222fd8e04933097a80ecabe9b0ef"><div class="ttname"><a href="class_equation_data.html#a07b3222fd8e04933097a80ecabe9b0ef">EquationData::setElast</a></div><div class="ttdeci">void setElast(double value)</div><div class="ttdoc">Функция устанавливающая коэффициент эластичности уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:118</div></div>
+<div class="ttc" id="aclass_equation_data_html_a158bb32131f051e61ed0c991299156a2"><div class="ttname"><a href="class_equation_data.html#a158bb32131f051e61ed0c991299156a2">EquationData::getN</a></div><div class="ttdeci">long long getN() const</div><div class="ttdoc">Функция получения количества эксперементов</div><div class="ttdef"><b>Определения</b> EquationData.cpp:42</div></div>
+<div class="ttc" id="aclass_equation_data_html_a1b1b1bf153875fce5ff65aaf00d3e6cd"><div class="ttname"><a href="class_equation_data.html#a1b1b1bf153875fce5ff65aaf00d3e6cd">EquationData::computeCorrelation</a></div><div class="ttdeci">void computeCorrelation()</div><div class="ttdoc">Функция вычисляющая коэффициент парной корреляции уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:189</div></div>
+<div class="ttc" id="aclass_equation_data_html_a22e7a94c838fed3a7d74d2545f096da1"><div class="ttname"><a href="class_equation_data.html#a22e7a94c838fed3a7d74d2545f096da1">EquationData::getElast</a></div><div class="ttdeci">double getElast() const</div><div class="ttdoc">Функция получения коэффициента эластичности уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:114</div></div>
+<div class="ttc" id="aclass_equation_data_html_a27c88043a09b97fc01a5963169e44cca"><div class="ttname"><a href="class_equation_data.html#a27c88043a09b97fc01a5963169e44cca">EquationData::setN</a></div><div class="ttdeci">void setN(long long value)</div><div class="ttdoc">Функция устанавливающая количество эксперементов</div><div class="ttdef"><b>Определения</b> EquationData.cpp:46</div></div>
+<div class="ttc" id="aclass_equation_data_html_a386d8abc191bbb140e7793df443904b1"><div class="ttname"><a href="class_equation_data.html#a386d8abc191bbb140e7793df443904b1">EquationData::computeBeta</a></div><div class="ttdeci">void computeBeta()</div><div class="ttdoc">Функция вычисляющая бета коэффициент уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:234</div></div>
+<div class="ttc" id="aclass_equation_data_html_a3ff9f06564599068f78e0d000474318c"><div class="ttname"><a href="class_equation_data.html#a3ff9f06564599068f78e0d000474318c">EquationData::getCorr</a></div><div class="ttdeci">double getCorr() const</div><div class="ttdoc">Функция получения коэффициента парной корреляции уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:98</div></div>
+<div class="ttc" id="aclass_equation_data_html_a429c3b92c6820d8946dc099b426621cb"><div class="ttname"><a href="class_equation_data.html#a429c3b92c6820d8946dc099b426621cb">EquationData::getA0</a></div><div class="ttdeci">double getA0() const</div><div class="ttdoc">Функция получения свободного коэффициента уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:82</div></div>
+<div class="ttc" id="aclass_equation_data_html_a44853f7c283d26a174367a5660342080"><div class="ttname"><a href="class_equation_data.html#a44853f7c283d26a174367a5660342080">EquationData::setA1</a></div><div class="ttdeci">void setA1(double value)</div><div class="ttdoc">Функция устанавливающая выборочный коэффициент уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:94</div></div>
+<div class="ttc" id="aclass_equation_data_html_a4e7eb38508f2a35e37e13195a81de8df"><div class="ttname"><a href="class_equation_data.html#a4e7eb38508f2a35e37e13195a81de8df">EquationData::plotDataAndRegression</a></div><div class="ttdeci">void plotDataAndRegression()</div><div class="ttdoc">Функция подготавливающая график с данными к отображению</div><div class="ttdef"><b>Определения</b> EquationData.cpp:269</div></div>
+<div class="ttc" id="aclass_equation_data_html_a5e49ee12038c434fe1d92d0954dda6a1"><div class="ttname"><a href="class_equation_data.html#a5e49ee12038c434fe1d92d0954dda6a1">EquationData::imagePath</a></div><div class="ttdeci">std::string imagePath</div><div class="ttdoc">Путь к файлу с графиком</div><div class="ttdef"><b>Определения</b> EquationData.h:45</div></div>
+<div class="ttc" id="aclass_equation_data_html_a605a0a9282a50cbe15567d14d99348c4"><div class="ttname"><a href="class_equation_data.html#a605a0a9282a50cbe15567d14d99348c4">EquationData::computeElastacity</a></div><div class="ttdeci">void computeElastacity()</div><div class="ttdoc">Функция вычисляющая коэффициент эластичности уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:221</div></div>
+<div class="ttc" id="aclass_equation_data_html_a6a92f5375f5d8e3f6bc063a1a5643b1a"><div class="ttname"><a href="class_equation_data.html#a6a92f5375f5d8e3f6bc063a1a5643b1a">EquationData::generateSample</a></div><div class="ttdeci">void generateSample()</div><div class="ttdoc">Функция генерирующая данные экспериментов</div><div class="ttdef"><b>Определения</b> EquationData.cpp:130</div></div>
+<div class="ttc" id="aclass_equation_data_html_a7b5934713d60c28365df2b8129c6587d"><div class="ttname"><a href="class_equation_data.html#a7b5934713d60c28365df2b8129c6587d">EquationData::getXmulty</a></div><div class="ttdeci">std::vector&lt; long long &gt; getXmulty() const</div><div class="ttdoc">Функция получения списка значений времени выполнения на количество элементов для каждого эксперемента</div><div class="ttdef"><b>Определения</b> EquationData.cpp:74</div></div>
+<div class="ttc" id="aclass_equation_data_html_a7fc4c37994226557ab4d72ad2d80a520"><div class="ttname"><a href="class_equation_data.html#a7fc4c37994226557ab4d72ad2d80a520">EquationData::setBeta</a></div><div class="ttdeci">void setBeta(double value)</div><div class="ttdoc">Функция устанавливающая бета коэффициент уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:126</div></div>
+<div class="ttc" id="aclass_equation_data_html_a82bc803dc17d8c3bbaca6c3836612ce7"><div class="ttname"><a href="class_equation_data.html#a82bc803dc17d8c3bbaca6c3836612ce7">EquationData::setSize</a></div><div class="ttdeci">void setSize(const std::vector&lt; long long &gt; &amp;value)</div><div class="ttdoc">Функция устанавливающая список значений количества элементов для каждого эксперемента</div><div class="ttdef"><b>Определения</b> EquationData.cpp:62</div></div>
+<div class="ttc" id="aclass_equation_data_html_a8e2ac215527489d6915d85dab864c818"><div class="ttname"><a href="class_equation_data.html#a8e2ac215527489d6915d85dab864c818">EquationData::setCorr</a></div><div class="ttdeci">void setCorr(double value)</div><div class="ttdoc">Функция устанавливающая коэффициент парной корреляции уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:102</div></div>
+<div class="ttc" id="aclass_equation_data_html_a9c622a6a6db528f0901e26111db7f0a3"><div class="ttname"><a href="class_equation_data.html#a9c622a6a6db528f0901e26111db7f0a3">EquationData::calculateLinearCoefficients</a></div><div class="ttdeci">void calculateLinearCoefficients()</div><div class="ttdoc">Функция вычисляющая свободный и выборочный коэффициенты уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:162</div></div>
+<div class="ttc" id="aclass_equation_data_html_aaa850c4debb522a30c519445165a2785"><div class="ttname"><a href="class_equation_data.html#aaa850c4debb522a30c519445165a2785">EquationData::setSqx</a></div><div class="ttdeci">void setSqx(const std::vector&lt; long long &gt; &amp;value)</div><div class="ttdoc">Функция устанавливающая список значений квадрата количества элементов для каждого эксперемента</div><div class="ttdef"><b>Определения</b> EquationData.cpp:70</div></div>
+<div class="ttc" id="aclass_equation_data_html_aabf40c17a9920ce45d87d9762d23f103"><div class="ttname"><a href="class_equation_data.html#aabf40c17a9920ce45d87d9762d23f103">EquationData::getTime</a></div><div class="ttdeci">std::vector&lt; long long &gt; getTime() const</div><div class="ttdoc">Функция получения списка значений времени выполнения для каждого эксперемента</div><div class="ttdef"><b>Определения</b> EquationData.cpp:50</div></div>
+<div class="ttc" id="aclass_equation_data_html_aadca0597f15a88df60f52e724bc47e6b"><div class="ttname"><a href="class_equation_data.html#aadca0597f15a88df60f52e724bc47e6b">EquationData::setTime</a></div><div class="ttdeci">void setTime(const std::vector&lt; long long &gt; &amp;value)</div><div class="ttdoc">Функция устанавливающая список значений времени выполнения для каждого эксперемента</div><div class="ttdef"><b>Определения</b> EquationData.cpp:54</div></div>
+<div class="ttc" id="aclass_equation_data_html_abdb3d1bf3d5299c31e2b7c3ce168b8f4"><div class="ttname"><a href="class_equation_data.html#abdb3d1bf3d5299c31e2b7c3ce168b8f4">EquationData::setA0</a></div><div class="ttdeci">void setA0(double value)</div><div class="ttdoc">Функция устанавливающая свободный коэффициент уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:86</div></div>
+<div class="ttc" id="aclass_equation_data_html_ac6845b330f7bb3d5fbf100b2902eea7f"><div class="ttname"><a href="class_equation_data.html#ac6845b330f7bb3d5fbf100b2902eea7f">EquationData::getSize</a></div><div class="ttdeci">std::vector&lt; long long &gt; getSize() const</div><div class="ttdoc">Функция получения списка значений количества элементов для каждого эксперемента</div><div class="ttdef"><b>Определения</b> EquationData.cpp:58</div></div>
+<div class="ttc" id="aclass_equation_data_html_ad00e8190f8f95f1cafbe1b596b574fbd"><div class="ttname"><a href="class_equation_data.html#ad00e8190f8f95f1cafbe1b596b574fbd">EquationData::getBeta</a></div><div class="ttdeci">double getBeta() const</div><div class="ttdoc">Функция получения бета коэффициента уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:122</div></div>
+<div class="ttc" id="aclass_equation_data_html_ad4c9d1dc7fbb35686be56ca1d5dd9aea"><div class="ttname"><a href="class_equation_data.html#ad4c9d1dc7fbb35686be56ca1d5dd9aea">EquationData::setXmulty</a></div><div class="ttdeci">void setXmulty(const std::vector&lt; long long &gt; &amp;value)</div><div class="ttdoc">Функция устанавливающая список значений времени выполнения на количество элементов для каждого экспер...</div><div class="ttdef"><b>Определения</b> EquationData.cpp:78</div></div>
+<div class="ttc" id="aclass_equation_data_html_ad6edc72e52820cc0df334b2720a2f83b"><div class="ttname"><a href="class_equation_data.html#ad6edc72e52820cc0df334b2720a2f83b">EquationData::EquationData</a></div><div class="ttdeci">EquationData(int Na=10000, int Nb=40000, int ACa=2, int ACb=10, int Counta=10, int Countb=15)</div><div class="ttdoc">Конструктор класса, принимающий минимальное и максимальное значение числа элементов в эксперементе,...</div><div class="ttdef"><b>Определения</b> EquationData.cpp:19</div></div>
+<div class="ttc" id="aclass_equation_data_html_ad7c3143da8d6edfc04d7ebdba92a0102"><div class="ttname"><a href="class_equation_data.html#ad7c3143da8d6edfc04d7ebdba92a0102">EquationData::setDet</a></div><div class="ttdeci">void setDet(double value)</div><div class="ttdoc">Функция устанавливающая коэффициент детерминации уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:110</div></div>
+<div class="ttc" id="aclass_equation_data_html_ad8a3fd15476b426fc880401c41db1206"><div class="ttname"><a href="class_equation_data.html#ad8a3fd15476b426fc880401c41db1206">EquationData::getDet</a></div><div class="ttdeci">double getDet() const</div><div class="ttdoc">Функция получения коэффициента детерминации уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:106</div></div>
+<div class="ttc" id="aclass_equation_data_html_ae51be05681b6806c36507679ce096e09"><div class="ttname"><a href="class_equation_data.html#ae51be05681b6806c36507679ce096e09">EquationData::getSqx</a></div><div class="ttdeci">std::vector&lt; long long &gt; getSqx() const</div><div class="ttdoc">Функция получения списка значений квадрата количества элементов для каждого эксперемента</div><div class="ttdef"><b>Определения</b> EquationData.cpp:66</div></div>
+<div class="ttc" id="aclass_equation_data_html_aeae86443e0185ad18a65d1078f7c040a"><div class="ttname"><a href="class_equation_data.html#aeae86443e0185ad18a65d1078f7c040a">EquationData::computeCoefficientOfDetermination</a></div><div class="ttdeci">void computeCoefficientOfDetermination()</div><div class="ttdoc">Функция вычисляющая коэффициент детерминации уравнения связи</div><div class="ttdef"><b>Определения</b> EquationData.cpp:214</div></div>
+<div class="ttc" id="aclass_equation_data_html_af1dbe1419cf2e7a244923e993b39a686"><div class="ttname"><a href="class_equation_data.html#af1dbe1419cf2e7a244923e993b39a686">EquationData::prepareData</a></div><div class="ttdeci">void prepareData()</div><div class="ttdoc">Функция подготавливающая данные к отображению</div><div class="ttdef"><b>Определения</b> EquationData.cpp:260</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>EquationData.h</b></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

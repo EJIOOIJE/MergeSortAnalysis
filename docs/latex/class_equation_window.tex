@@ -1,0 +1,110 @@
+\doxysection{Класс Equation\+Window}
+\hypertarget{class_equation_window}{}\label{class_equation_window}\index{EquationWindow@{EquationWindow}}
+
+
+Граф наследования\+:Equation\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_equation_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Equation\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_equation_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_equation_window_a390019603a4d87d8135b4ad9b35a6297}\label{class_equation_window_a390019603a4d87d8135b4ad9b35a6297} 
+{\bfseries Equation\+Window} (const sf\+::\+Vector2u \&window\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_base_window}{Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Base\+Window} (const sf\+::\+Vector2u \&window\+Size)
+\item 
+void {\bfseries update} ()
+\item 
+void {\bfseries update} (const \mbox{\hyperlink{struct_base_widget_1_1_window_params}{Base\+Widget\+::\+Window\+Params}} \&params)
+\item 
+void {\bfseries show} ()
+\item 
+tgui\+::\+Gui \& {\bfseries get\+Gui} ()
+\item 
+sf\+::\+Render\+Window \& {\bfseries get\+Window} ()
+\item 
+\mbox{\hyperlink{class_base_widget}{Base\+Widget}} \& {\bfseries get\+Widget} ()
+\item 
+void {\bfseries set\+Size} (const sf\+::\+Vector2u \&new\+Size)
+\item 
+void {\bfseries set\+Title} (const std\+::string \&title)
+\item 
+void {\bfseries stop} ()
+\item 
+void {\bfseries set\+Widget} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ new\+Widget)
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ {\bfseries release\+Widget} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_equation_window_ac481e9a1d5d20bfdbb2ac12e3a6e121b}{create\+Window}} (const sf\+::\+Vector2u \&window\+Size) override
+\item 
+void \mbox{\hyperlink{class_equation_window_a3d320c94900d74c51b11f84c2400518f}{handle\+Event}} (const sf\+::\+Event \&event) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены унаследованные от \mbox{\hyperlink{class_base_window}{Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries prepare\+Widget} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_base_window}{Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window {\bfseries window}
+\item 
+tgui\+::\+Gui {\bfseries gui}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ {\bfseries widget}
+\item 
+sf\+::\+Vector2u {\bfseries size}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_equation_window_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_equation_window_ac481e9a1d5d20bfdbb2ac12e3a6e121b}\index{EquationWindow@{EquationWindow}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!EquationWindow@{EquationWindow}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily \label{class_equation_window_ac481e9a1d5d20bfdbb2ac12e3a6e121b} 
+void Equation\+Window\+::create\+Window (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2u \&}]{window\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_base_window}{Base\+Window}}.
+
+\Hypertarget{class_equation_window_a3d320c94900d74c51b11f84c2400518f}\index{EquationWindow@{EquationWindow}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!EquationWindow@{EquationWindow}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily \label{class_equation_window_a3d320c94900d74c51b11f84c2400518f} 
+void Equation\+Window\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_base_window}{Base\+Window}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Equation\+Window.\+h\item 
+Equation\+Window.\+cpp\end{DoxyCompactItemize}

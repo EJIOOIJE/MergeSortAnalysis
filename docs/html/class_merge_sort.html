@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Merge Sort analysis: Шаблон класса MergeSort&lt; Iterator &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome-css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Merge Sort analysis<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Анализ алгоритма сортировки Merge Sort</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_merge_sort.html','','class_merge_sort-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Шаблон класса MergeSort&lt; Iterator &gt;</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс сортировки слиянием  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_merge_sort_8h_source.html">MergeSort.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a459cdb307f8155503484c84cc6337b40" id="r_a459cdb307f8155503484c84cc6337b40"><td class="memItemLeft" align="right" valign="top"><a id="a459cdb307f8155503484c84cc6337b40" name="a459cdb307f8155503484c84cc6337b40"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ValueType</b> = typename std::iterator_traits&lt;Iterator&gt;::value_type</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab31924ebc850afa41ca07957e3e3f807" id="r_ab31924ebc850afa41ca07957e3e3f807"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_sort_result.html">SortResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab31924ebc850afa41ca07957e3e3f807">sort</a> (Iterator begin, Iterator end)</td></tr>
+<tr class="memdesc:ab31924ebc850afa41ca07957e3e3f807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонная функция сортировки слиянием  <br /></td></tr>
+<tr class="memitem:aeb323a311162b1dea413068de132a96a" id="r_aeb323a311162b1dea413068de132a96a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sort_result.html">SortResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb323a311162b1dea413068de132a96a">sort</a> (std::vector&lt; double &gt; &amp;vec)</td></tr>
+<tr class="memdesc:aeb323a311162b1dea413068de132a96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сортировки слиянием для вектора&lt;double&gt;.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Iterator&gt;<br />
+class MergeSort&lt; Iterator &gt;</div><p>Класс сортировки слиянием </p>
+<p>Данный класс предоставляет функционал для сортировки слиянием различных итерируемых объектов. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ab31924ebc850afa41ca07957e3e3f807" name="ab31924ebc850afa41ca07957e3e3f807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab31924ebc850afa41ca07957e3e3f807">&#9670;&#160;</a></span>sort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Iterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_sort_result.html">SortResult</a> <a class="el" href="class_merge_sort.html">MergeSort</a>&lt; Iterator &gt;::sort </td>
+          <td>(</td>
+          <td class="paramtype">Iterator</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterator</td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Шаблонная функция сортировки слиянием </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Iterator</td><td>- любой итерируемый тип</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">begin</td><td>начало итерируемого объекта</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">end</td><td>конец итерируемого объекта</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Структура <a class="el" href="struct_sort_result.html" title="Структура с результатами сортировки">SortResult</a> с параметрами сортировки</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Не рекомендуется использовать напрямую, желательно добавлять перегрузки для отдельных типов </dd></dl>
+
+</div>
+</div>
+<a id="aeb323a311162b1dea413068de132a96a" name="aeb323a311162b1dea413068de132a96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb323a311162b1dea413068de132a96a">&#9670;&#160;</a></span>sort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Iterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_sort_result.html">SortResult</a> <a class="el" href="class_merge_sort.html">MergeSort</a>&lt; Iterator &gt;::sort </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция сортировки слиянием для вектора&lt;double&gt;. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">vec</td><td>вектор&lt;double&gt;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Структура <a class="el" href="struct_sort_result.html" title="Структура с результатами сортировки">SortResult</a> с параметрами сортировки</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_class" href="class_merge_sort.html">MergeSort&lt;std::vector&lt;double&gt;::iterator</a>&gt; <a class="code hl_function" href="#ab31924ebc850afa41ca07957e3e3f807">sort</a>;</div>
+<div class="line"><span class="keywordflow">return</span> <a class="code hl_function" href="#ab31924ebc850afa41ca07957e3e3f807">sort</a>.sort(arr);</div>
+<div class="ttc" id="aclass_merge_sort_html"><div class="ttname"><a href="class_merge_sort.html">MergeSort</a></div><div class="ttdoc">Класс сортировки слиянием</div><div class="ttdef"><b>Определения</b> MergeSort.h:13</div></div>
+<div class="ttc" id="aclass_merge_sort_html_ab31924ebc850afa41ca07957e3e3f807"><div class="ttname"><a href="#ab31924ebc850afa41ca07957e3e3f807">MergeSort::sort</a></div><div class="ttdeci">virtual SortResult sort(Iterator begin, Iterator end)</div><div class="ttdoc">Шаблонная функция сортировки слиянием</div><div class="ttdef"><b>Определения</b> MergeSort.h:30</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="_merge_sort_8h_source.html">MergeSort.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_merge_sort.html">MergeSort</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

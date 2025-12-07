@@ -1,0 +1,47 @@
+\doxysection{Base\+Window.\+h}
+\hypertarget{_base_window_8h_source}{}\label{_base_window_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}BaseWidget.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }BaseWindow\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ BaseWindow(\textcolor{keyword}{const}\ sf::Vector2u\&\ windowSize);}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~BaseWindow();}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_base_widget_1_1_window_params}{BaseWidget::WindowParams}}\&\ params);}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ show();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ tgui::Gui\&\ getGui();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ sf::RenderWindow\&\ getWindow();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_base_widget}{BaseWidget}}\&\ getWidget();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ handleEvent(\textcolor{keyword}{const}\ sf::Event\&\ event);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ setSize(\textcolor{keyword}{const}\ sf::Vector2u\&\ newSize);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ setTitle(\textcolor{keyword}{const}\ std::string\&\ title);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ stop();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ setWidget(std::unique\_ptr<BaseWidget>\ newWidget);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ std::unique\_ptr<BaseWidget>\ releaseWidget();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00035\ \ \ \ \ sf::RenderWindow\ window;}
+\DoxyCodeLine{00036\ \ \ \ \ tgui::Gui\ gui;}
+\DoxyCodeLine{00037\ \ \ \ \ std::unique\_ptr<BaseWidget>\ widget;}
+\DoxyCodeLine{00038\ \ \ \ \ sf::Vector2u\ size;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ createWindow(\textcolor{keyword}{const}\ sf::Vector2u\&\ windowSize);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ prepareWidget();}
+\DoxyCodeLine{00042\ \};}
+
+\end{DoxyCode}

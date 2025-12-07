@@ -1,0 +1,82 @@
+\doxysection{Класс Json\+Serializator}
+\hypertarget{class_json_serializator}{}\label{class_json_serializator}\index{JsonSerializator@{JsonSerializator}}
+
+
+Интерфейс для JSON сериализации  
+
+
+
+
+{\ttfamily \#include $<$Json\+Serializator.\+h$>$}
+
+
+
+Граф наследования\+:Json\+Serializator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_json_serializator__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual json \mbox{\hyperlink{class_json_serializator_a4ef3d503a5f18df24f6362ba9ddadb8c}{to\+Json}} () const =0
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_serializator_ac042863859bb7f39d1bb2c0021230956}{from\+Json}} (const json \&j)=0
+\begin{DoxyCompactList}\small\item\em Функция преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс для JSON сериализации 
+
+Данный интерфейс предоставляет функционал для сериализации используя JSON. 
+
+\label{doc-func-members}
+\Hypertarget{class_json_serializator_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_json_serializator_ac042863859bb7f39d1bb2c0021230956}\index{JsonSerializator@{JsonSerializator}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!JsonSerializator@{JsonSerializator}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily \label{class_json_serializator_ac042863859bb7f39d1bb2c0021230956} 
+virtual void Json\+Serializator\+::from\+Json (\begin{DoxyParamCaption}\item[{const json \&}]{j}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Функция преобразования JSON в объект класса 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em j} & JSON\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Объект класса, восстановленный в JSON 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_sortable_array_a7640e8aa4272f6d1b57ccfa9f9a63940}{Sortable\+Array}}, \mbox{\hyperlink{class_sort_data_a949d241eb77f81d99f9b818fbd7a02b8}{Sort\+Data}} и \mbox{\hyperlink{class_user_a4ca613d255d13a36a63bdd7755d4db15}{User}}.
+
+\Hypertarget{class_json_serializator_a4ef3d503a5f18df24f6362ba9ddadb8c}\index{JsonSerializator@{JsonSerializator}!toJson@{toJson}}
+\index{toJson@{toJson}!JsonSerializator@{JsonSerializator}}
+\doxysubsubsection{\texorpdfstring{toJson()}{toJson()}}
+{\footnotesize\ttfamily \label{class_json_serializator_a4ef3d503a5f18df24f6362ba9ddadb8c} 
+virtual json Json\+Serializator\+::to\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Функция преобразования объекта класса в JSON. 
+
+\begin{DoxyReturn}{Возвращает}
+Объект класса, преобразованный в JSON 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_sortable_array_a3394982ab0357a9eae7bf074d383f759}{Sortable\+Array}}, \mbox{\hyperlink{class_sort_data_ac5a852c835f0edd07aec274414e8082c}{Sort\+Data}} и \mbox{\hyperlink{class_user_a83de69e915c0880f5204f678d4556d84}{User}}.
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Json\+Serializator.\+h\end{DoxyCompactItemize}

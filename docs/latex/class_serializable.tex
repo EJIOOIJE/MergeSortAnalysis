@@ -1,0 +1,97 @@
+\doxysection{Класс Serializable}
+\hypertarget{class_serializable}{}\label{class_serializable}\index{Serializable@{Serializable}}
+
+
+Класс для сериализации и сохранения  
+
+
+
+
+{\ttfamily \#include $<$Serializable.\+h$>$}
+
+
+
+Граф наследования\+:Serializable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_serializable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Serializable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_serializable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_serializable_acc8dbd1cdae6c89de6c6391cf68fdde3}{save\+JSON}} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON и сохранения его в файл \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_serializable_a0f0b77d3400da851f0d5f6cfcb0e3624}{load\+JSON}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Функция загрузки из файла и преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_json_serializator}{Json\+Serializator}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual json \mbox{\hyperlink{class_json_serializator_a4ef3d503a5f18df24f6362ba9ddadb8c}{to\+Json}} () const =0
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_serializator_ac042863859bb7f39d1bb2c0021230956}{from\+Json}} (const json \&j)=0
+\begin{DoxyCompactList}\small\item\em Функция преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для сериализации и сохранения 
+
+Данный класс предоставляет функционал для сериализации и сохранения сериализованных объектов. 
+
+\label{doc-func-members}
+\Hypertarget{class_serializable_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_serializable_a0f0b77d3400da851f0d5f6cfcb0e3624}\index{Serializable@{Serializable}!loadJSON@{loadJSON}}
+\index{loadJSON@{loadJSON}!Serializable@{Serializable}}
+\doxysubsubsection{\texorpdfstring{loadJSON()}{loadJSON()}}
+{\footnotesize\ttfamily \label{class_serializable_a0f0b77d3400da851f0d5f6cfcb0e3624} 
+bool Serializable\+::load\+JSON (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Функция загрузки из файла и преобразования JSON в объект класса 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em filename} & имя файла\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат операции 
+\end{DoxyReturn}
+\Hypertarget{class_serializable_acc8dbd1cdae6c89de6c6391cf68fdde3}\index{Serializable@{Serializable}!saveJSON@{saveJSON}}
+\index{saveJSON@{saveJSON}!Serializable@{Serializable}}
+\doxysubsubsection{\texorpdfstring{saveJSON()}{saveJSON()}}
+{\footnotesize\ttfamily \label{class_serializable_acc8dbd1cdae6c89de6c6391cf68fdde3} 
+bool Serializable\+::save\+JSON (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция преобразования объекта класса в JSON и сохранения его в файл 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em filename} & имя файла\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат операции 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Serializable.\+h\item 
+Serializable.\+cpp\end{DoxyCompactItemize}

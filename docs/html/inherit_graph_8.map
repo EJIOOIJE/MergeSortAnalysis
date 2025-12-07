@@ -1,0 +1,13 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$class_json_serializator.html" title="Интерфейс для JSON сериализации" alt="" coords="5,56,120,83"/>
+<area shape="rect" id="Node000001" href="$class_serializator.html" title="Интерфейс для сериализации" alt="" coords="168,56,254,83"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="135,67,170,69,165,70,136,72"/>
+<area shape="rect" id="Node000002" href="$class_serializable.html" title="Класс для сериализации и сохранения" alt="" coords="302,56,390,83"/>
+<area shape="poly" id="edge13_Node000001_Node000002" title=" " alt="" coords="270,67,304,69,299,70,270,72"/>
+<area shape="rect" id="Node000003" href="$class_sort_data.html" title="Класс для хранения данных о сортировке" alt="" coords="452,5,525,32"/>
+<area shape="poly" id="edge14_Node000002_Node000003" title=" " alt="" coords="399,48,449,32,454,31,401,53"/>
+<area shape="rect" id="Node000004" href="$class_sortable_array.html" title="Класс для хранения массива чисел" alt="" coords="438,56,539,83"/>
+<area shape="poly" id="edge15_Node000002_Node000004" title=" " alt="" coords="406,67,441,69,435,70,406,72"/>
+<area shape="rect" id="Node000005" href="$class_user.html" title=" " alt="" coords="464,107,513,133"/>
+<area shape="poly" id="edge16_Node000002_Node000005" title=" " alt="" coords="400,86,466,112,461,111,399,91"/>
+</map>

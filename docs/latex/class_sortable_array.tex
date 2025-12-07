@@ -1,0 +1,172 @@
+\doxysection{Класс Sortable\+Array}
+\hypertarget{class_sortable_array}{}\label{class_sortable_array}\index{SortableArray@{SortableArray}}
+
+
+Класс для хранения массива чисел  
+
+
+
+
+{\ttfamily \#include $<$Sortable\+Array.\+h$>$}
+
+
+
+Граф наследования\+:Sortable\+Array\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_sortable_array__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Sortable\+Array\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_sortable_array__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sortable_array_a3931d5be740b6cd938772e493ab07856}\label{class_sortable_array_a3931d5be740b6cd938772e493ab07856} 
+void {\bfseries clear\+Data} ()
+\begin{DoxyCompactList}\small\item\em Функция очищающая массив чисел \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_sortable_array_acfd1a9f70bf65f2c60441afd5355495a}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Функция копирования данных \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sortable_array_a48da489146e710a0e7720d9ce0203cb9}{Sortable\+Array}} (const std\+::vector$<$ double $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимающий массив чисел \end{DoxyCompactList}\item 
+const std\+::vector$<$ double $>$ \& \mbox{\hyperlink{class_sortable_array_a3491b5f653187d332dfdfe99ad9267b1}{get\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения данных \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sortable_array_a5e82596c130d3053a2939a00e1e8c950}{set\+Data}} (const std\+::vector$<$ double $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая массив чисел \end{DoxyCompactList}\item 
+json \mbox{\hyperlink{class_sortable_array_a3394982ab0357a9eae7bf074d383f759}{to\+Json}} () const override
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sortable_array_a7640e8aa4272f6d1b57ccfa9f9a63940}{from\+Json}} (const json \&j) override
+\begin{DoxyCompactList}\small\item\em Функция преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_serializable}{Serializable}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_serializable_acc8dbd1cdae6c89de6c6391cf68fdde3}{save\+JSON}} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON и сохранения его в файл \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_serializable_a0f0b77d3400da851f0d5f6cfcb0e3624}{load\+JSON}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Функция загрузки из файла и преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для хранения массива чисел 
+
+Данный класс предоставляет функционал для сериализации и сохранения массива чисел. 
+
+\label{doc-constructors}
+\Hypertarget{class_sortable_array_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_sortable_array_a48da489146e710a0e7720d9ce0203cb9}\index{SortableArray@{SortableArray}!SortableArray@{SortableArray}}
+\index{SortableArray@{SortableArray}!SortableArray@{SortableArray}}
+\doxysubsubsection{\texorpdfstring{SortableArray()}{SortableArray()}}
+{\footnotesize\ttfamily \label{class_sortable_array_a48da489146e710a0e7720d9ce0203cb9} 
+Sortable\+Array\+::\+Sortable\+Array (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор класса, принимающий массив чисел 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em data} & массив чисел \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_sortable_array_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_sortable_array_acfd1a9f70bf65f2c60441afd5355495a}\index{SortableArray@{SortableArray}!clone@{clone}}
+\index{clone@{clone}!SortableArray@{SortableArray}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_sortable_array_acfd1a9f70bf65f2c60441afd5355495a} 
+\mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \texorpdfstring{$\ast$}{*} Sortable\+Array\+::clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция копирования данных 
+
+\begin{DoxyReturn}{Возвращает}
+Скопированный объект класса 
+\end{DoxyReturn}
+\Hypertarget{class_sortable_array_a7640e8aa4272f6d1b57ccfa9f9a63940}\index{SortableArray@{SortableArray}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!SortableArray@{SortableArray}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily \label{class_sortable_array_a7640e8aa4272f6d1b57ccfa9f9a63940} 
+void Sortable\+Array\+::from\+Json (\begin{DoxyParamCaption}\item[{const json \&}]{j}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция преобразования JSON в объект класса 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em j} & JSON\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Объект класса, восстановленный в JSON 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{class_json_serializator_ac042863859bb7f39d1bb2c0021230956}{Json\+Serializator}}.
+
+\Hypertarget{class_sortable_array_a3491b5f653187d332dfdfe99ad9267b1}\index{SortableArray@{SortableArray}!getData@{getData}}
+\index{getData@{getData}!SortableArray@{SortableArray}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_sortable_array_a3491b5f653187d332dfdfe99ad9267b1} 
+const std\+::vector$<$ double $>$ \& Sortable\+Array\+::get\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения данных 
+
+\begin{DoxyReturn}{Возвращает}
+Массив чисел 
+\end{DoxyReturn}
+\Hypertarget{class_sortable_array_a5e82596c130d3053a2939a00e1e8c950}\index{SortableArray@{SortableArray}!setData@{setData}}
+\index{setData@{setData}!SortableArray@{SortableArray}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily \label{class_sortable_array_a5e82596c130d3053a2939a00e1e8c950} 
+void Sortable\+Array\+::set\+Data (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая массив чисел 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em data} & массив чисел \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sortable_array_a3394982ab0357a9eae7bf074d383f759}\index{SortableArray@{SortableArray}!toJson@{toJson}}
+\index{toJson@{toJson}!SortableArray@{SortableArray}}
+\doxysubsubsection{\texorpdfstring{toJson()}{toJson()}}
+{\footnotesize\ttfamily \label{class_sortable_array_a3394982ab0357a9eae7bf074d383f759} 
+json Sortable\+Array\+::to\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция преобразования объекта класса в JSON. 
+
+\begin{DoxyReturn}{Возвращает}
+Объект класса, преобразованный в JSON 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{class_json_serializator_a4ef3d503a5f18df24f6362ba9ddadb8c}{Json\+Serializator}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Sortable\+Array.\+h\item 
+Sortable\+Array.\+cpp\end{DoxyCompactItemize}

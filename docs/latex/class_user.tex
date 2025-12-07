@@ -1,0 +1,110 @@
+\doxysection{Класс User}
+\hypertarget{class_user}{}\label{class_user}\index{User@{User}}
+
+
+Граф наследования\+:User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_user__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_user__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_user_af717f97cf5c9133de3f50e4b10f4b4e2}\label{class_user_af717f97cf5c9133de3f50e4b10f4b4e2} 
+bool {\bfseries is\+Equal\+To} (const \mbox{\hyperlink{class_user}{User}} \&other) const
+\item 
+\Hypertarget{class_user_a4c0be2061d0bb5bbf80ac0a4fdde16ff}\label{class_user_a4c0be2061d0bb5bbf80ac0a4fdde16ff} 
+void {\bfseries set\+Password} (const std\+::string \&password)
+\item 
+\Hypertarget{class_user_a9d69b7eccc909bb3744cb93822197fd9}\label{class_user_a9d69b7eccc909bb3744cb93822197fd9} 
+bool {\bfseries check\+Password} (const std\+::string \&password) const
+\item 
+\Hypertarget{class_user_abe00c5897614ba0aa61fd130ca57eff0}\label{class_user_abe00c5897614ba0aa61fd130ca57eff0} 
+bool {\bfseries is\+Empty} () const
+\item 
+json \mbox{\hyperlink{class_user_a83de69e915c0880f5204f678d4556d84}{to\+Json}} () const override
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a4ca613d255d13a36a63bdd7755d4db15}{from\+Json}} (const json \&j) override
+\begin{DoxyCompactList}\small\item\em Функция преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_serializable}{Serializable}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_serializable_acc8dbd1cdae6c89de6c6391cf68fdde3}{save\+JSON}} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON и сохранения его в файл \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_serializable_a0f0b77d3400da851f0d5f6cfcb0e3624}{load\+JSON}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Функция загрузки из файла и преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_user_a085d8d69282b6298964eab8351584536}\label{class_user_a085d8d69282b6298964eab8351584536} 
+std\+::string {\bfseries name}
+\item 
+\Hypertarget{class_user_a68ef4336327a1ee8b4532a6042485f3a}\label{class_user_a68ef4336327a1ee8b4532a6042485f3a} 
+std\+::string {\bfseries login}
+\item 
+\Hypertarget{class_user_aa6f97f01f2b981aa9119727521959857}\label{class_user_aa6f97f01f2b981aa9119727521959857} 
+bool {\bfseries is\+Admin} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_user_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_user_a4ca613d255d13a36a63bdd7755d4db15}\index{User@{User}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!User@{User}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily \label{class_user_a4ca613d255d13a36a63bdd7755d4db15} 
+void User\+::from\+Json (\begin{DoxyParamCaption}\item[{const json \&}]{j}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция преобразования JSON в объект класса 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em j} & JSON\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Объект класса, восстановленный в JSON 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{class_json_serializator_ac042863859bb7f39d1bb2c0021230956}{Json\+Serializator}}.
+
+\Hypertarget{class_user_a83de69e915c0880f5204f678d4556d84}\index{User@{User}!toJson@{toJson}}
+\index{toJson@{toJson}!User@{User}}
+\doxysubsubsection{\texorpdfstring{toJson()}{toJson()}}
+{\footnotesize\ttfamily \label{class_user_a83de69e915c0880f5204f678d4556d84} 
+json User\+::to\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция преобразования объекта класса в JSON. 
+
+\begin{DoxyReturn}{Возвращает}
+Объект класса, преобразованный в JSON 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{class_json_serializator_a4ef3d503a5f18df24f6362ba9ddadb8c}{Json\+Serializator}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+User.\+h\item 
+User.\+cpp\end{DoxyCompactItemize}

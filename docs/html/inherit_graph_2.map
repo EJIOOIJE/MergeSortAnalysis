@@ -1,0 +1,15 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$class_base_widget.html" title=" " alt="" coords="5,132,98,159"/>
+<area shape="rect" id="Node000001" href="$class_app_widget.html" title=" " alt="" coords="160,5,245,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="69,118,102,80,144,42,167,31,163,34,147,46,106,83,74,121"/>
+<area shape="rect" id="Node000002" href="$class_equation_widget.html" title=" " alt="" coords="146,56,259,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="89,122,144,92,172,81,168,85,147,97,92,126"/>
+<area shape="rect" id="Node000003" href="$class_login_widget.html" title=" " alt="" coords="156,107,249,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="112,133,158,126,153,129,114,137"/>
+<area shape="rect" id="Node000004" href="$class_main_widget.html" title=" " alt="" coords="157,157,248,184"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="112,153,159,162,154,164,113,158"/>
+<area shape="rect" id="Node000005" href="$class_multi_widget.html" title=" " alt="" coords="157,208,248,235"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="90,164,147,194,172,207,167,208,144,198,90,169"/>
+<area shape="rect" id="Node000006" href="$class_tech_widget.html" title=" " alt="" coords="157,259,248,285"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="72,168,106,207,147,245,168,258,163,258,144,249,102,211,71,173"/>
+</map>

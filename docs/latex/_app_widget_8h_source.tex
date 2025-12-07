@@ -1,0 +1,60 @@
+\doxysection{App\+Widget.\+h}
+\hypertarget{_app_widget_8h_source}{}\label{_app_widget_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}BaseWidget.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}SortData.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}SortResult.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}SortParams.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }AppWidget\ :\ \textcolor{keyword}{public}\ BaseWidget\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_app_widget_1_1_window_params}{WindowParams}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ sf::Vector2u\ windowSize\{\ 1280,\ 720\ \};}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ std::string\ headerText\{\ \textcolor{stringliteral}{"{}Data\ sort"{}}\ \};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ std::array<std::string,\ 3>\ leftLabels\{\ \textcolor{stringliteral}{"{}N"{}},\ \textcolor{stringliteral}{"{}A"{}},\ \textcolor{stringliteral}{"{}C"{}}\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ std::string\ rightContainer1Header\{\ \textcolor{stringliteral}{"{}Original\ array"{}}\ \};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::string\ rightContainer2Header\{\ \textcolor{stringliteral}{"{}Sorted\ array"{}}\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ std::array<std::string,\ 3>\ bottomLabels\{\ \textcolor{stringliteral}{"{}Execution\ time"{}},\ \textcolor{stringliteral}{"{}Number\ of\ comparisons"{}},\ \textcolor{stringliteral}{"{}Number\ of\ permutations"{}}\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::array<std::string,\ 6>\ buttonTexts\{\ \textcolor{stringliteral}{"{}Sort"{}},\ \textcolor{stringliteral}{"{}Save"{}},\ \textcolor{stringliteral}{"{}Load"{}},\ \textcolor{stringliteral}{"{}Clear"{}},\textcolor{stringliteral}{"{}Connection\ equation"{}},\ \textcolor{stringliteral}{"{}Exit"{}}\ \};}
+\DoxyCodeLine{00022\ \ \ \ \ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ AppWidget();}
+\DoxyCodeLine{00025\ \ \ \ \ \string~AppWidget()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ show(tgui::Gui\&\ gui)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \ \ \ \ tgui::Container::Ptr\ getRootWidget()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ assignParameters()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ create()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{struct_app_widget_1_1_window_params}{WindowParams}}\ windowParams;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ tgui::Label::Ptr\ headerLabel;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ tgui::EditBox::Ptr\ leftEditBoxes[3];}
+\DoxyCodeLine{00040\ \ \ \ \ tgui::Label::Ptr\ leftLabels[3];}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ tgui::Label::Ptr\ rightHeaders[2];}
+\DoxyCodeLine{00043\ \ \ \ \ tgui::ScrollablePanel::Ptr\ rightTables[2];}
+\DoxyCodeLine{00044\ \ \ \ \ tgui::VerticalLayout::Ptr\ tableContent[2];}
+\DoxyCodeLine{00045\ \ \ \ \ tgui::Scrollbar::Ptr\ rightScrollbars[2];}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_sortable_array}{SortableArray}}\ orig;}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_sortable_array}{SortableArray}}\ sorted;}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{struct_sort_result}{SortResult}}\ res;}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{struct_sort_params}{SortParams}}\ params;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ tgui::EditBox::Ptr\ bottomEditBoxes[3];}
+\DoxyCodeLine{00052\ \ \ \ \ tgui::Label::Ptr\ bottomLabels[3];}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ tgui::Button::Ptr\ buttons[6];}
+\DoxyCodeLine{00055\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,82 @@
+\doxysection{Merge\+Sort.\+h}
+\hypertarget{_merge_sort_8h_source}{}\label{_merge_sort_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iterator>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}SortResult.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Iterator>}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_merge_sort}{MergeSort}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{using\ }ValueType\ =\ \textcolor{keyword}{typename}\ std::iterator\_traits<Iterator>::value\_type;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{struct_sort_result}{SortResult}}\ \mbox{\hyperlink{class_merge_sort_ab31924ebc850afa41ca07957e3e3f807}{sort}}(Iterator\ begin,\ Iterator\ end)\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_sort_result}{SortResult}}\ result;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (begin\ ==\ end\ ||\ std::next(begin)\ ==\ end)\ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ start\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ mergeSortRecursive(begin,\ end,\ result);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ endTime\ =\ std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ result.\mbox{\hyperlink{struct_sort_result_a75d3cf46a7a4ed9bd9e42b3465c402fe}{elapsedTimeMs}}\ =\ endTime\ -\/\ start;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{struct_sort_result}{SortResult}}\ \mbox{\hyperlink{class_merge_sort_aeb323a311162b1dea413068de132a96a}{sort}}(std::vector<double>\&\ vec)\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_merge_sort_ab31924ebc850afa41ca07957e3e3f807}{sort}}(vec.begin(),\ vec.end());}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ mergeSortRecursive(Iterator\ begin,\ Iterator\ end,\ \mbox{\hyperlink{struct_sort_result}{SortResult}}\&\ result)\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ distance\ =\ std::distance(begin,\ end);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (distance\ <=\ 1)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ mid\ =\ std::next(begin,\ distance\ /\ 2);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ mergeSortRecursive(begin,\ mid,\ result);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ mergeSortRecursive(mid,\ end,\ result);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ mergeMerge(begin,\ mid,\ end,\ result);}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ mergeMerge(Iterator\ begin,\ Iterator\ mid,\ Iterator\ end,\ SortResult\&\ result)\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{typename}\ std::iterator\_traits<Iterator>::value\_type\ T;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ std::vector<T>\ left(begin,\ mid);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ std::vector<T>\ right(mid,\ end);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ itLeft\ =\ left.begin();}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ itRight\ =\ right.begin();}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ begin;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (itLeft\ !=\ left.end()\ \&\&\ itRight\ !=\ right.end())\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ result.\mbox{\hyperlink{struct_sort_result_a05a72f467bc0062a5048b8241d81092e}{comparisons}}++;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (*itLeft\ <=\ *itRight)\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *it\ =\ *itLeft;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ++itLeft;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *it\ =\ *itRight;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ++itRight;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ result.\mbox{\hyperlink{struct_sort_result_aa2d9dcee7971b24506de856116a1e58d}{swaps}}++;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ ++it;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (itLeft\ !=\ left.end())\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ *it\ =\ *itLeft;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ ++itLeft;}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ ++it;}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ result.\mbox{\hyperlink{struct_sort_result_aa2d9dcee7971b24506de856116a1e58d}{swaps}}++;}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (itRight\ !=\ right.end())\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ *it\ =\ *itRight;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ ++itRight;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ ++it;}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ result.\mbox{\hyperlink{struct_sort_result_aa2d9dcee7971b24506de856116a1e58d}{swaps}}++;}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \}}
+\DoxyCodeLine{00107\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Merge Sort analysis: Исходный файл SortableArray.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome-css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Merge Sort analysis<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Анализ алгоритма сортировки Merge Sort</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_sortable_array_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SortableArray.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef SORTABLE_ARRAY_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define SORTABLE_ARRAY_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Serializable.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_sortable_array.html">   13</a></span><span class="keyword">class </span>SortableArray : <span class="keyword">public</span> <a class="code hl_class" href="class_serializable.html">Serializable</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    SortableArray();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sortable_array.html#a3931d5be740b6cd938772e493ab07856">clearData</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">virtual</span> SortableArray* <a class="code hl_function" href="class_sortable_array.html#acfd1a9f70bf65f2c60441afd5355495a">clone</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">explicit</span> SortableArray(<span class="keyword">const</span> std::vector&lt;double&gt;&amp; data);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">const</span> std::vector&lt;double&gt;&amp; <a class="code hl_function" href="class_sortable_array.html#a3491b5f653187d332dfdfe99ad9267b1">getData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sortable_array.html#a5e82596c130d3053a2939a00e1e8c950">setData</a>(<span class="keyword">const</span> std::vector&lt;double&gt;&amp; data);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    json <a class="code hl_function" href="class_sortable_array.html#a3394982ab0357a9eae7bf074d383f759">toJson</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sortable_array.html#a7640e8aa4272f6d1b57ccfa9f9a63940">fromJson</a>(<span class="keyword">const</span> json&amp; j) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::vector&lt;double&gt; data;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">// SORTABLE_ARRAY_H</span></div>
+<div class="ttc" id="aclass_serializable_html"><div class="ttname"><a href="class_serializable.html">Serializable</a></div><div class="ttdoc">Класс для сериализации и сохранения</div><div class="ttdef"><b>Определения</b> Serializable.h:12</div></div>
+<div class="ttc" id="aclass_sortable_array_html_a3394982ab0357a9eae7bf074d383f759"><div class="ttname"><a href="class_sortable_array.html#a3394982ab0357a9eae7bf074d383f759">SortableArray::toJson</a></div><div class="ttdeci">json toJson() const override</div><div class="ttdoc">Функция преобразования объекта класса в JSON.</div><div class="ttdef"><b>Определения</b> SortableArray.cpp:27</div></div>
+<div class="ttc" id="aclass_sortable_array_html_a3491b5f653187d332dfdfe99ad9267b1"><div class="ttname"><a href="class_sortable_array.html#a3491b5f653187d332dfdfe99ad9267b1">SortableArray::getData</a></div><div class="ttdeci">const std::vector&lt; double &gt; &amp; getData() const</div><div class="ttdoc">Функция получения данных</div><div class="ttdef"><b>Определения</b> SortableArray.cpp:19</div></div>
+<div class="ttc" id="aclass_sortable_array_html_a3931d5be740b6cd938772e493ab07856"><div class="ttname"><a href="class_sortable_array.html#a3931d5be740b6cd938772e493ab07856">SortableArray::clearData</a></div><div class="ttdeci">void clearData()</div><div class="ttdoc">Функция очищающая массив чисел</div><div class="ttdef"><b>Определения</b> SortableArray.cpp:9</div></div>
+<div class="ttc" id="aclass_sortable_array_html_a5e82596c130d3053a2939a00e1e8c950"><div class="ttname"><a href="class_sortable_array.html#a5e82596c130d3053a2939a00e1e8c950">SortableArray::setData</a></div><div class="ttdeci">void setData(const std::vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Функция устанавливающая массив чисел</div><div class="ttdef"><b>Определения</b> SortableArray.cpp:23</div></div>
+<div class="ttc" id="aclass_sortable_array_html_a7640e8aa4272f6d1b57ccfa9f9a63940"><div class="ttname"><a href="class_sortable_array.html#a7640e8aa4272f6d1b57ccfa9f9a63940">SortableArray::fromJson</a></div><div class="ttdeci">void fromJson(const json &amp;j) override</div><div class="ttdoc">Функция преобразования JSON в объект класса</div><div class="ttdef"><b>Определения</b> SortableArray.cpp:33</div></div>
+<div class="ttc" id="aclass_sortable_array_html_acfd1a9f70bf65f2c60441afd5355495a"><div class="ttname"><a href="class_sortable_array.html#acfd1a9f70bf65f2c60441afd5355495a">SortableArray::clone</a></div><div class="ttdeci">virtual SortableArray * clone() const</div><div class="ttdoc">Функция копирования данных</div><div class="ttdef"><b>Определения</b> SortableArray.cpp:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>SortableArray.h</b></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+\doxysection{Algorithm.\+h}
+\hypertarget{_algorithm_8h_source}{}\label{_algorithm_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}SortAlgorithms.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Generators.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm}{Algorithm}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_algorithm}{\string~Algorithm}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00013\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_algorithm_a4a1bb029ae793584548cfca8ef0d4a7d}{generateFisk}}(\textcolor{keywordtype}{double}\ alpha,\ \textcolor{keywordtype}{double}\ c);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<double>\ \mbox{\hyperlink{class_algorithm_aa90a56ddc4443846d8d7f2ce6b547151}{generateFiskArray}}(\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ size,\ \textcolor{keywordtype}{double}\ alpha,\ \textcolor{keywordtype}{double}\ c);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_sort_result}{SortResult}}\ \mbox{\hyperlink{class_algorithm_abe9af0ab0a1c9cb089699cec1ce2d5f6}{mergeSort}}(std::vector<double>\&\ arr);}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00061\ \textcolor{comment}{\#pragma\ once}}
+\DoxyCodeLine{00062\ \textcolor{comment}{\#ifndef\ ALGORITHM\_H}}
+\DoxyCodeLine{00063\ \textcolor{comment}{\#define\ ALGORITHM\_H}}
+\DoxyCodeLine{00064\ \textcolor{comment}{}}
+\DoxyCodeLine{00065\ \textcolor{comment}{\#include\ <vector>}}
+\DoxyCodeLine{00066\ \textcolor{comment}{\#include\ "{}SortResult.h"{}}}
+\DoxyCodeLine{00067\ \textcolor{comment}{}}
+\DoxyCodeLine{00068\ \textcolor{comment}{class\ Algorithm\ \{}}
+\DoxyCodeLine{00069\ \textcolor{comment}{public:}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ \ \ \ static\ double\ generateFisk(double\ alpha,\ double\ c);}}
+\DoxyCodeLine{00071\ \textcolor{comment}{}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ \ \ \ static\ std::vector<double>\ generateFiskArray(long\ long\ size,\ double\ alpha,\ double\ c);}}
+\DoxyCodeLine{00073\ \textcolor{comment}{}}
+\DoxyCodeLine{00074\ \textcolor{comment}{\ \ \ \ static\ SortResult\ mergeSort(std::vector<double>\&\ arr);}}
+\DoxyCodeLine{00075\ \textcolor{comment}{}}
+\DoxyCodeLine{00076\ \textcolor{comment}{private:}}
+\DoxyCodeLine{00077\ \textcolor{comment}{\ \ \ \ static\ void\ mergeSortRecursive(std::vector<double>\&\ arr,\ long\ long\ left,\ long\ long\ right,\ SortResult\&\ result);}}
+\DoxyCodeLine{00078\ \textcolor{comment}{}}
+\DoxyCodeLine{00079\ \textcolor{comment}{\ \ \ \ static\ void\ mergeSortmerge(std::vector<double>\&\ arr,\ long\ long\ left,\ long\ long\ mid,\ long\ long\ right,\ SortResult\&\ result);}}
+\DoxyCodeLine{00080\ \textcolor{comment}{\};}}
+\DoxyCodeLine{00081\ \textcolor{comment}{}}
+\DoxyCodeLine{00082\ \textcolor{comment}{\#endif\ //\ ALGORITHM\_H}}
+\DoxyCodeLine{00083\ \textcolor{comment}{*/}}
+
+\end{DoxyCode}

@@ -1,0 +1,40 @@
+\doxysection{Main\+Widget.\+h}
+\hypertarget{_main_widget_8h_source}{}\label{_main_widget_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}BaseWidget.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Globals.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }MainWidget\ :\ \textcolor{keyword}{public}\ BaseWidget\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_main_widget_1_1_window_params}{WindowParams}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ sf::Vector2u\ windowSize\{\ 1280,\ 720\ \};}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ std::string\ techSpecButtonText\{\ \textcolor{stringliteral}{"{}T\(\backslash\)ne\(\backslash\)nc\(\backslash\)nh\(\backslash\)nn\(\backslash\)ni\(\backslash\)nc\(\backslash\)na\(\backslash\)nl\(\backslash\)n\ \(\backslash\)nS\(\backslash\)np\(\backslash\)ne\(\backslash\)nc\(\backslash\)ni\(\backslash\)nf\(\backslash\)ni\(\backslash\)nc\(\backslash\)na\(\backslash\)nt\(\backslash\)ni\(\backslash\)no\(\backslash\)nn"{}}\ \};}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ std::string\ appButtonText\{\ \textcolor{stringliteral}{"{}A\(\backslash\)np\(\backslash\)np\(\backslash\)nl\(\backslash\)ni\(\backslash\)nc\(\backslash\)na\(\backslash\)nt\(\backslash\)ni\(\backslash\)no\(\backslash\)nn"{}}\ \};}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ std::string\ exitButtonText\{\ \textcolor{stringliteral}{"{}E\(\backslash\)nx\(\backslash\)ni\(\backslash\)nt"{}}\ \};}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::string\ imagePath\{\ (IMG\_FOLDER\ /\ \textcolor{stringliteral}{"{}front.png"{}}).\textcolor{keywordtype}{string}()\ \};}
+\DoxyCodeLine{00014\ \ \ \ \ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ MainWidget();}
+\DoxyCodeLine{00017\ \ \ \ \ \string~MainWidget()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ show(tgui::Gui\&\ gui)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ \ \ \ \ tgui::Container::Ptr\ getRootWidget()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ assignParameters()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ create()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_main_widget_1_1_window_params}{WindowParams}}\ windowParams;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ tgui::Button::Ptr\ techSpecButton;}
+\DoxyCodeLine{00030\ \ \ \ \ tgui::Button::Ptr\ appButton;}
+\DoxyCodeLine{00031\ \ \ \ \ tgui::Button::Ptr\ exitButton;}
+\DoxyCodeLine{00032\ \ \ \ \ tgui::Picture::Ptr\ centerImage;}
+\DoxyCodeLine{00033\ \ \ \ \ sf::Texture\ sftexture;}
+\DoxyCodeLine{00034\ \ \ \ \ tgui::Texture\ tgtexture;}
+\DoxyCodeLine{00035\ \};}
+
+\end{DoxyCode}

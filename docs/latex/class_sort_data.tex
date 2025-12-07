@@ -1,0 +1,291 @@
+\doxysection{Класс Sort\+Data}
+\hypertarget{class_sort_data}{}\label{class_sort_data}\index{SortData@{SortData}}
+
+
+Класс для хранения данных о сортировке  
+
+
+
+
+{\ttfamily \#include $<$Sort\+Data.\+h$>$}
+
+
+
+Граф наследования\+:Sort\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_sort_data__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Sort\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_sort_data__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sort_data_a4762f35e8f86d1e444581da4acf7255e}{Sort\+Data}} (const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \&first, const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \&second, const \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \&result, const \mbox{\hyperlink{struct_sort_params}{Sort\+Params}} \&params)
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимающий изначальный массив чисел, отсортированный массив чисел, характеристики выполнения сортировки, параметры выполнения сортировки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sort_data_ac2bb7cc85b42666279ac5055a9709b2a}{set\+First}} (const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \&arr)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая изначальный массив чисел \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sort_data_a75d14c7bae97b8af38419bfc28a93b84}{set\+Second}} (const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \&arr)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая отсортированный массив чисел \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \& \mbox{\hyperlink{class_sort_data_a778fef7f36d35bc33083e12df6598821}{get\+First}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения изначального массива чисел \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \& \mbox{\hyperlink{class_sort_data_a8d60a49b175a7391f7a3095f6dd52c15}{get\+Second}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения отсортированного массива чисел \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sort_data_aa96677a8420a02aba127666bef40f6c4}{set\+Sort\+Result}} (const \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \&result)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая характеристики выполнения сортировки \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \& \mbox{\hyperlink{class_sort_data_a0b63ff1d52a773ae489549e0c9ca3f72}{get\+Sort\+Result}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения характеристик выполнения сортировки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sort_data_a2b913eacaedfd555bc509aa3ee13d7cc}{set\+Sort\+Params}} (const \mbox{\hyperlink{struct_sort_params}{Sort\+Params}} \&params)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая параметры выполнения сортировки \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_sort_params}{Sort\+Params}} \& \mbox{\hyperlink{class_sort_data_aa38134702efcc93bc233010439a19ef6}{get\+Sort\+Params}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения параметров выполнения сортировки \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_sort_data_ac8176dbf417c009da9ee97640ca9c7e6}{get\+File\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения имени файла для сохранения \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_sort_data_ab29ba4f6202d46e4ab611d8d87c115db}{get\+Full\+Name}} (std\+::string \&file\+Name) const
+\begin{DoxyCompactList}\small\item\em Функция получения полного пути к файлу для сохранения \end{DoxyCompactList}\item 
+json \mbox{\hyperlink{class_sort_data_ac5a852c835f0edd07aec274414e8082c}{to\+Json}} () const override
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sort_data_a949d241eb77f81d99f9b818fbd7a02b8}{from\+Json}} (const json \&j) override
+\begin{DoxyCompactList}\small\item\em Функция преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_serializable}{Serializable}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_serializable_acc8dbd1cdae6c89de6c6391cf68fdde3}{save\+JSON}} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em Функция преобразования объекта класса в JSON и сохранения его в файл \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_serializable_a0f0b77d3400da851f0d5f6cfcb0e3624}{load\+JSON}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Функция загрузки из файла и преобразования JSON в объект класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для хранения данных о сортировке 
+
+Данный класс предоставляет функционал для сериализации и сохранения данных о сортировке. 
+
+\label{doc-constructors}
+\Hypertarget{class_sort_data_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_sort_data_a4762f35e8f86d1e444581da4acf7255e}\index{SortData@{SortData}!SortData@{SortData}}
+\index{SortData@{SortData}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{SortData()}{SortData()}}
+{\footnotesize\ttfamily \label{class_sort_data_a4762f35e8f86d1e444581da4acf7255e} 
+Sort\+Data\+::\+Sort\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \&}]{first}{, }\item[{const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \&}]{second}{, }\item[{const \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \&}]{result}{, }\item[{const \mbox{\hyperlink{struct_sort_params}{Sort\+Params}} \&}]{params}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор класса, принимающий изначальный массив чисел, отсортированный массив чисел, характеристики выполнения сортировки, параметры выполнения сортировки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em first} & изначальный массив чисел\\
+\hline
+\mbox{\texttt{in}}  & {\em second} & отсортированный массив чисел\\
+\hline
+\mbox{\texttt{in}}  & {\em result} & характеристики выполнения сортировки\\
+\hline
+\mbox{\texttt{in}}  & {\em params} & параметры выполнения сортировки \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_sort_data_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_sort_data_a949d241eb77f81d99f9b818fbd7a02b8}\index{SortData@{SortData}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily \label{class_sort_data_a949d241eb77f81d99f9b818fbd7a02b8} 
+void Sort\+Data\+::from\+Json (\begin{DoxyParamCaption}\item[{const json \&}]{j}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция преобразования JSON в объект класса 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em j} & JSON\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Объект класса, восстановленный в JSON 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{class_json_serializator_ac042863859bb7f39d1bb2c0021230956}{Json\+Serializator}}.
+
+\Hypertarget{class_sort_data_ac8176dbf417c009da9ee97640ca9c7e6}\index{SortData@{SortData}!getFileName@{getFileName}}
+\index{getFileName@{getFileName}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{getFileName()}{getFileName()}}
+{\footnotesize\ttfamily \label{class_sort_data_ac8176dbf417c009da9ee97640ca9c7e6} 
+std\+::string Sort\+Data\+::get\+File\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения имени файла для сохранения 
+
+\begin{DoxyReturn}{Возвращает}
+Имя файла 
+\end{DoxyReturn}
+\Hypertarget{class_sort_data_a778fef7f36d35bc33083e12df6598821}\index{SortData@{SortData}!getFirst@{getFirst}}
+\index{getFirst@{getFirst}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{getFirst()}{getFirst()}}
+{\footnotesize\ttfamily \label{class_sort_data_a778fef7f36d35bc33083e12df6598821} 
+const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \& Sort\+Data\+::get\+First (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения изначального массива чисел 
+
+\begin{DoxyReturn}{Возвращает}
+Изначальный массив чисел 
+\end{DoxyReturn}
+\Hypertarget{class_sort_data_ab29ba4f6202d46e4ab611d8d87c115db}\index{SortData@{SortData}!getFullName@{getFullName}}
+\index{getFullName@{getFullName}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{getFullName()}{getFullName()}}
+{\footnotesize\ttfamily \label{class_sort_data_ab29ba4f6202d46e4ab611d8d87c115db} 
+std\+::string Sort\+Data\+::get\+Full\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{file\+Name}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения полного пути к файлу для сохранения 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em file\+Name} & имя файла\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу 
+\end{DoxyReturn}
+\Hypertarget{class_sort_data_a8d60a49b175a7391f7a3095f6dd52c15}\index{SortData@{SortData}!getSecond@{getSecond}}
+\index{getSecond@{getSecond}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{getSecond()}{getSecond()}}
+{\footnotesize\ttfamily \label{class_sort_data_a8d60a49b175a7391f7a3095f6dd52c15} 
+const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \& Sort\+Data\+::get\+Second (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения отсортированного массива чисел 
+
+\begin{DoxyReturn}{Возвращает}
+Отсортированный массив чисел 
+\end{DoxyReturn}
+\Hypertarget{class_sort_data_aa38134702efcc93bc233010439a19ef6}\index{SortData@{SortData}!getSortParams@{getSortParams}}
+\index{getSortParams@{getSortParams}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{getSortParams()}{getSortParams()}}
+{\footnotesize\ttfamily \label{class_sort_data_aa38134702efcc93bc233010439a19ef6} 
+const \mbox{\hyperlink{struct_sort_params}{Sort\+Params}} \& Sort\+Data\+::get\+Sort\+Params (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения параметров выполнения сортировки 
+
+\begin{DoxyReturn}{Возвращает}
+Параметры выполнения сортировки 
+\end{DoxyReturn}
+\Hypertarget{class_sort_data_a0b63ff1d52a773ae489549e0c9ca3f72}\index{SortData@{SortData}!getSortResult@{getSortResult}}
+\index{getSortResult@{getSortResult}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{getSortResult()}{getSortResult()}}
+{\footnotesize\ttfamily \label{class_sort_data_a0b63ff1d52a773ae489549e0c9ca3f72} 
+const \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \& Sort\+Data\+::get\+Sort\+Result (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения характеристик выполнения сортировки 
+
+\begin{DoxyReturn}{Возвращает}
+Характеристики выполнения сортировки 
+\end{DoxyReturn}
+\Hypertarget{class_sort_data_ac2bb7cc85b42666279ac5055a9709b2a}\index{SortData@{SortData}!setFirst@{setFirst}}
+\index{setFirst@{setFirst}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{setFirst()}{setFirst()}}
+{\footnotesize\ttfamily \label{class_sort_data_ac2bb7cc85b42666279ac5055a9709b2a} 
+void Sort\+Data\+::set\+First (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \&}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая изначальный массив чисел 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em arr} & изначальный массив чисел \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sort_data_a75d14c7bae97b8af38419bfc28a93b84}\index{SortData@{SortData}!setSecond@{setSecond}}
+\index{setSecond@{setSecond}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{setSecond()}{setSecond()}}
+{\footnotesize\ttfamily \label{class_sort_data_a75d14c7bae97b8af38419bfc28a93b84} 
+void Sort\+Data\+::set\+Second (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sortable_array}{Sortable\+Array}} \&}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая отсортированный массив чисел 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em arr} & отсортированный массив чисел \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sort_data_a2b913eacaedfd555bc509aa3ee13d7cc}\index{SortData@{SortData}!setSortParams@{setSortParams}}
+\index{setSortParams@{setSortParams}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{setSortParams()}{setSortParams()}}
+{\footnotesize\ttfamily \label{class_sort_data_a2b913eacaedfd555bc509aa3ee13d7cc} 
+void Sort\+Data\+::set\+Sort\+Params (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_sort_params}{Sort\+Params}} \&}]{params}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая параметры выполнения сортировки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em params} & параметры выполнения сортировки \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sort_data_aa96677a8420a02aba127666bef40f6c4}\index{SortData@{SortData}!setSortResult@{setSortResult}}
+\index{setSortResult@{setSortResult}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{setSortResult()}{setSortResult()}}
+{\footnotesize\ttfamily \label{class_sort_data_aa96677a8420a02aba127666bef40f6c4} 
+void Sort\+Data\+::set\+Sort\+Result (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \&}]{result}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая характеристики выполнения сортировки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em result} & характеристики выполнения сортировки \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sort_data_ac5a852c835f0edd07aec274414e8082c}\index{SortData@{SortData}!toJson@{toJson}}
+\index{toJson@{toJson}!SortData@{SortData}}
+\doxysubsubsection{\texorpdfstring{toJson()}{toJson()}}
+{\footnotesize\ttfamily \label{class_sort_data_ac5a852c835f0edd07aec274414e8082c} 
+json Sort\+Data\+::to\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция преобразования объекта класса в JSON. 
+
+\begin{DoxyReturn}{Возвращает}
+Объект класса, преобразованный в JSON 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{class_json_serializator_a4ef3d503a5f18df24f6362ba9ddadb8c}{Json\+Serializator}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Sort\+Data.\+h\item 
+Sort\+Data.\+cpp\end{DoxyCompactItemize}

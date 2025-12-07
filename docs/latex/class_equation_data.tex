@@ -1,0 +1,540 @@
+\doxysection{Класс Equation\+Data}
+\hypertarget{class_equation_data}{}\label{class_equation_data}\index{EquationData@{EquationData}}
+
+
+Класс для оценивания связи между временем выполнения сортировки и размером массива  
+
+
+
+
+{\ttfamily \#include $<$Equation\+Data.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_equation_data_a6a92f5375f5d8e3f6bc063a1a5643b1a}{generate\+Sample}} ()
+\begin{DoxyCompactList}\small\item\em Функция генерирующая данные экспериментов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a9c622a6a6db528f0901e26111db7f0a3}{calculate\+Linear\+Coefficients}} ()
+\begin{DoxyCompactList}\small\item\em Функция вычисляющая свободный и выборочный коэффициенты уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a1b1b1bf153875fce5ff65aaf00d3e6cd}{compute\+Correlation}} ()
+\begin{DoxyCompactList}\small\item\em Функция вычисляющая коэффициент парной корреляции уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_aeae86443e0185ad18a65d1078f7c040a}{compute\+Coefficient\+Of\+Determination}} ()
+\begin{DoxyCompactList}\small\item\em Функция вычисляющая коэффициент детерминации уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a605a0a9282a50cbe15567d14d99348c4}{compute\+Elastacity}} ()
+\begin{DoxyCompactList}\small\item\em Функция вычисляющая коэффициент эластичности уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a386d8abc191bbb140e7793df443904b1}{compute\+Beta}} ()
+\begin{DoxyCompactList}\small\item\em Функция вычисляющая бета коэффициент уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_af1dbe1419cf2e7a244923e993b39a686}{prepare\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Функция подготавливающая данные к отображению \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_equation_data_ad6edc72e52820cc0df334b2720a2f83b}{Equation\+Data}} (int Na=10000, int Nb=40000, int ACa=2, int ACb=10, int Counta=10, int Countb=15)
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимающий минимальное и максимальное значение числа элементов в эксперементе, парамтеров масштаба и формы, числа эксперементов \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{class_equation_data_a158bb32131f051e61ed0c991299156a2}{getN}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения количества эксперементов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a27c88043a09b97fc01a5963169e44cca}{setN}} (long long value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая количество эксперементов \end{DoxyCompactList}\item 
+std\+::vector$<$ long long $>$ \mbox{\hyperlink{class_equation_data_aabf40c17a9920ce45d87d9762d23f103}{get\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения списка значений времени выполнения для каждого эксперемента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_aadca0597f15a88df60f52e724bc47e6b}{set\+Time}} (const std\+::vector$<$ long long $>$ \&value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая список значений времени выполнения для каждого эксперемента \end{DoxyCompactList}\item 
+std\+::vector$<$ long long $>$ \mbox{\hyperlink{class_equation_data_ac6845b330f7bb3d5fbf100b2902eea7f}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения списка значений количества элементов для каждого эксперемента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a82bc803dc17d8c3bbaca6c3836612ce7}{set\+Size}} (const std\+::vector$<$ long long $>$ \&value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая список значений количества элементов для каждого эксперемента \end{DoxyCompactList}\item 
+std\+::vector$<$ long long $>$ \mbox{\hyperlink{class_equation_data_ae51be05681b6806c36507679ce096e09}{get\+Sqx}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения списка значений квадрата количества элементов для каждого эксперемента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_aaa850c4debb522a30c519445165a2785}{set\+Sqx}} (const std\+::vector$<$ long long $>$ \&value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая список значений квадрата количества элементов для каждого эксперемента \end{DoxyCompactList}\item 
+std\+::vector$<$ long long $>$ \mbox{\hyperlink{class_equation_data_a7b5934713d60c28365df2b8129c6587d}{get\+Xmulty}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения списка значений времени выполнения на количество элементов для каждого эксперемента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_ad4c9d1dc7fbb35686be56ca1d5dd9aea}{set\+Xmulty}} (const std\+::vector$<$ long long $>$ \&value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая список значений времени выполнения на количество элементов для каждого эксперемента \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_equation_data_a429c3b92c6820d8946dc099b426621cb}{get\+A0}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения свободного коэффициента уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_abdb3d1bf3d5299c31e2b7c3ce168b8f4}{set\+A0}} (double value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая свободный коэффициент уравнения связи \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_equation_data_a025cbbdaff416bc9de0614861fa2f674}{get\+A1}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения выборочного коэффициента уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a44853f7c283d26a174367a5660342080}{set\+A1}} (double value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая выборочный коэффициент уравнения связи \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_equation_data_a3ff9f06564599068f78e0d000474318c}{get\+Corr}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения коэффициента парной корреляции уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a8e2ac215527489d6915d85dab864c818}{set\+Corr}} (double value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая коэффициент парной корреляции уравнения связи \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_equation_data_ad8a3fd15476b426fc880401c41db1206}{get\+Det}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения коэффициента детерминации уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_ad7c3143da8d6edfc04d7ebdba92a0102}{set\+Det}} (double value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая коэффициент детерминации уравнения связи \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_equation_data_a22e7a94c838fed3a7d74d2545f096da1}{get\+Elast}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения коэффициента эластичности уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a07b3222fd8e04933097a80ecabe9b0ef}{set\+Elast}} (double value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая коэффициент эластичности уравнения связи \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_equation_data_ad00e8190f8f95f1cafbe1b596b574fbd}{get\+Beta}} () const
+\begin{DoxyCompactList}\small\item\em Функция получения бета коэффициента уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a7fc4c37994226557ab4d72ad2d80a520}{set\+Beta}} (double value)
+\begin{DoxyCompactList}\small\item\em Функция устанавливающая бета коэффициент уравнения связи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_equation_data_a4e7eb38508f2a35e37e13195a81de8df}{plot\+Data\+And\+Regression}} ()
+\begin{DoxyCompactList}\small\item\em Функция подготавливающая график с данными к отображению \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_equation_data_a5e49ee12038c434fe1d92d0954dda6a1}\label{class_equation_data_a5e49ee12038c434fe1d92d0954dda6a1} 
+std\+::string {\bfseries image\+Path}
+\begin{DoxyCompactList}\small\item\em Путь к файлу с графиком \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для оценивания связи между временем выполнения сортировки и размером массива 
+
+Данный класс предоставляет функционал для оценивания связи между временем выполнения программного алгоритма (временной параметр T) и размером задачи (емкостной параметр V). 
+
+\label{doc-constructors}
+\Hypertarget{class_equation_data_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_equation_data_ad6edc72e52820cc0df334b2720a2f83b}\index{EquationData@{EquationData}!EquationData@{EquationData}}
+\index{EquationData@{EquationData}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{EquationData()}{EquationData()}}
+{\footnotesize\ttfamily \label{class_equation_data_ad6edc72e52820cc0df334b2720a2f83b} 
+Equation\+Data\+::\+Equation\+Data (\begin{DoxyParamCaption}\item[{int}]{Na}{ = {\ttfamily 10000}, }\item[{int}]{Nb}{ = {\ttfamily 40000}, }\item[{int}]{ACa}{ = {\ttfamily 2}, }\item[{int}]{ACb}{ = {\ttfamily 10}, }\item[{int}]{Counta}{ = {\ttfamily 10}, }\item[{int}]{Countb}{ = {\ttfamily 15}}\end{DoxyParamCaption})}
+
+
+
+Конструктор класса, принимающий минимальное и максимальное значение числа элементов в эксперементе, парамтеров масштаба и формы, числа эксперементов 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em Na} & минимальное число элементов в эксперементе\\
+\hline
+\mbox{\texttt{in}}  & {\em Nb} & максимальное число элементов в эксперементе\\
+\hline
+\mbox{\texttt{in}}  & {\em ACa} & минимальное значение парамтеров масштаба и формы\\
+\hline
+\mbox{\texttt{in}}  & {\em ACb} & максимальное значение парамтеров масштаба и формы\\
+\hline
+\mbox{\texttt{in}}  & {\em Counta} & минимальное число эксперементов\\
+\hline
+\mbox{\texttt{in}}  & {\em Countb} & максимальное число эксперементов \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_equation_data_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_equation_data_a9c622a6a6db528f0901e26111db7f0a3}\index{EquationData@{EquationData}!calculateLinearCoefficients@{calculateLinearCoefficients}}
+\index{calculateLinearCoefficients@{calculateLinearCoefficients}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{calculateLinearCoefficients()}{calculateLinearCoefficients()}}
+{\footnotesize\ttfamily \label{class_equation_data_a9c622a6a6db528f0901e26111db7f0a3} 
+void Equation\+Data\+::calculate\+Linear\+Coefficients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Функция вычисляющая свободный и выборочный коэффициенты уравнения связи 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция должна быть использованна после вызова generate\+Sample 
+\end{DoxyWarning}
+\Hypertarget{class_equation_data_a386d8abc191bbb140e7793df443904b1}\index{EquationData@{EquationData}!computeBeta@{computeBeta}}
+\index{computeBeta@{computeBeta}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{computeBeta()}{computeBeta()}}
+{\footnotesize\ttfamily \label{class_equation_data_a386d8abc191bbb140e7793df443904b1} 
+void Equation\+Data\+::compute\+Beta (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Функция вычисляющая бета коэффициент уравнения связи 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция должна быть использованна после вызова generate\+Sample и calculate\+Linear\+Coefficients 
+\end{DoxyWarning}
+\Hypertarget{class_equation_data_aeae86443e0185ad18a65d1078f7c040a}\index{EquationData@{EquationData}!computeCoefficientOfDetermination@{computeCoefficientOfDetermination}}
+\index{computeCoefficientOfDetermination@{computeCoefficientOfDetermination}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{computeCoefficientOfDetermination()}{computeCoefficientOfDetermination()}}
+{\footnotesize\ttfamily \label{class_equation_data_aeae86443e0185ad18a65d1078f7c040a} 
+void Equation\+Data\+::compute\+Coefficient\+Of\+Determination (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Функция вычисляющая коэффициент детерминации уравнения связи 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция должна быть использованна после вызова generate\+Sample 
+\end{DoxyWarning}
+\Hypertarget{class_equation_data_a1b1b1bf153875fce5ff65aaf00d3e6cd}\index{EquationData@{EquationData}!computeCorrelation@{computeCorrelation}}
+\index{computeCorrelation@{computeCorrelation}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{computeCorrelation()}{computeCorrelation()}}
+{\footnotesize\ttfamily \label{class_equation_data_a1b1b1bf153875fce5ff65aaf00d3e6cd} 
+void Equation\+Data\+::compute\+Correlation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Функция вычисляющая коэффициент парной корреляции уравнения связи 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция должна быть использованна после вызова generate\+Sample 
+\end{DoxyWarning}
+\Hypertarget{class_equation_data_a605a0a9282a50cbe15567d14d99348c4}\index{EquationData@{EquationData}!computeElastacity@{computeElastacity}}
+\index{computeElastacity@{computeElastacity}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{computeElastacity()}{computeElastacity()}}
+{\footnotesize\ttfamily \label{class_equation_data_a605a0a9282a50cbe15567d14d99348c4} 
+void Equation\+Data\+::compute\+Elastacity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Функция вычисляющая коэффициент эластичности уравнения связи 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция должна быть использованна после вызова generate\+Sample и calculate\+Linear\+Coefficients 
+\end{DoxyWarning}
+\Hypertarget{class_equation_data_a6a92f5375f5d8e3f6bc063a1a5643b1a}\index{EquationData@{EquationData}!generateSample@{generateSample}}
+\index{generateSample@{generateSample}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{generateSample()}{generateSample()}}
+{\footnotesize\ttfamily \label{class_equation_data_a6a92f5375f5d8e3f6bc063a1a5643b1a} 
+void Equation\+Data\+::generate\+Sample (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Функция генерирующая данные экспериментов 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция должна быть использованна первой, после создания экземаляра класса 
+\end{DoxyWarning}
+\Hypertarget{class_equation_data_a429c3b92c6820d8946dc099b426621cb}\index{EquationData@{EquationData}!getA0@{getA0}}
+\index{getA0@{getA0}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getA0()}{getA0()}}
+{\footnotesize\ttfamily \label{class_equation_data_a429c3b92c6820d8946dc099b426621cb} 
+double Equation\+Data\+::get\+A0 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения свободного коэффициента уравнения связи 
+
+\begin{DoxyReturn}{Возвращает}
+Свободный коэффициент уравнения связи 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_a025cbbdaff416bc9de0614861fa2f674}\index{EquationData@{EquationData}!getA1@{getA1}}
+\index{getA1@{getA1}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getA1()}{getA1()}}
+{\footnotesize\ttfamily \label{class_equation_data_a025cbbdaff416bc9de0614861fa2f674} 
+double Equation\+Data\+::get\+A1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения выборочного коэффициента уравнения связи 
+
+\begin{DoxyReturn}{Возвращает}
+Выборочный коэффициент уравнения связи 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_ad00e8190f8f95f1cafbe1b596b574fbd}\index{EquationData@{EquationData}!getBeta@{getBeta}}
+\index{getBeta@{getBeta}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getBeta()}{getBeta()}}
+{\footnotesize\ttfamily \label{class_equation_data_ad00e8190f8f95f1cafbe1b596b574fbd} 
+double Equation\+Data\+::get\+Beta (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения бета коэффициента уравнения связи 
+
+\begin{DoxyReturn}{Возвращает}
+Бета коэффициент уравнения связи 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_a3ff9f06564599068f78e0d000474318c}\index{EquationData@{EquationData}!getCorr@{getCorr}}
+\index{getCorr@{getCorr}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getCorr()}{getCorr()}}
+{\footnotesize\ttfamily \label{class_equation_data_a3ff9f06564599068f78e0d000474318c} 
+double Equation\+Data\+::get\+Corr (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения коэффициента парной корреляции уравнения связи 
+
+\begin{DoxyReturn}{Возвращает}
+Коэффициент парной корреляции уравнения связи 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_ad8a3fd15476b426fc880401c41db1206}\index{EquationData@{EquationData}!getDet@{getDet}}
+\index{getDet@{getDet}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getDet()}{getDet()}}
+{\footnotesize\ttfamily \label{class_equation_data_ad8a3fd15476b426fc880401c41db1206} 
+double Equation\+Data\+::get\+Det (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения коэффициента детерминации уравнения связи 
+
+\begin{DoxyReturn}{Возвращает}
+Коэффициент детерминации уравнения связи 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_a22e7a94c838fed3a7d74d2545f096da1}\index{EquationData@{EquationData}!getElast@{getElast}}
+\index{getElast@{getElast}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getElast()}{getElast()}}
+{\footnotesize\ttfamily \label{class_equation_data_a22e7a94c838fed3a7d74d2545f096da1} 
+double Equation\+Data\+::get\+Elast (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения коэффициента эластичности уравнения связи 
+
+\begin{DoxyReturn}{Возвращает}
+Коэффициент эластичности уравнения связи 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_a158bb32131f051e61ed0c991299156a2}\index{EquationData@{EquationData}!getN@{getN}}
+\index{getN@{getN}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getN()}{getN()}}
+{\footnotesize\ttfamily \label{class_equation_data_a158bb32131f051e61ed0c991299156a2} 
+long long Equation\+Data\+::getN (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения количества эксперементов 
+
+\begin{DoxyReturn}{Возвращает}
+Количество эксперементов 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_ac6845b330f7bb3d5fbf100b2902eea7f}\index{EquationData@{EquationData}!getSize@{getSize}}
+\index{getSize@{getSize}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_equation_data_ac6845b330f7bb3d5fbf100b2902eea7f} 
+std\+::vector$<$ long long $>$ Equation\+Data\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения списка значений количества элементов для каждого эксперемента 
+
+\begin{DoxyReturn}{Возвращает}
+Список значений количества элементов для каждого эксперемента 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_ae51be05681b6806c36507679ce096e09}\index{EquationData@{EquationData}!getSqx@{getSqx}}
+\index{getSqx@{getSqx}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getSqx()}{getSqx()}}
+{\footnotesize\ttfamily \label{class_equation_data_ae51be05681b6806c36507679ce096e09} 
+std\+::vector$<$ long long $>$ Equation\+Data\+::get\+Sqx (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения списка значений квадрата количества элементов для каждого эксперемента 
+
+\begin{DoxyReturn}{Возвращает}
+Список значений квадрата количества элементов для каждого эксперемента 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_aabf40c17a9920ce45d87d9762d23f103}\index{EquationData@{EquationData}!getTime@{getTime}}
+\index{getTime@{getTime}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily \label{class_equation_data_aabf40c17a9920ce45d87d9762d23f103} 
+std\+::vector$<$ long long $>$ Equation\+Data\+::get\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения списка значений времени выполнения для каждого эксперемента 
+
+\begin{DoxyReturn}{Возвращает}
+Список значений времени выполнения для каждого эксперемента 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_a7b5934713d60c28365df2b8129c6587d}\index{EquationData@{EquationData}!getXmulty@{getXmulty}}
+\index{getXmulty@{getXmulty}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{getXmulty()}{getXmulty()}}
+{\footnotesize\ttfamily \label{class_equation_data_a7b5934713d60c28365df2b8129c6587d} 
+std\+::vector$<$ long long $>$ Equation\+Data\+::get\+Xmulty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Функция получения списка значений времени выполнения на количество элементов для каждого эксперемента 
+
+\begin{DoxyReturn}{Возвращает}
+Список значений времени выполнения на количество элементов для каждого эксперемента 
+\end{DoxyReturn}
+\Hypertarget{class_equation_data_a4e7eb38508f2a35e37e13195a81de8df}\index{EquationData@{EquationData}!plotDataAndRegression@{plotDataAndRegression}}
+\index{plotDataAndRegression@{plotDataAndRegression}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{plotDataAndRegression()}{plotDataAndRegression()}}
+{\footnotesize\ttfamily \label{class_equation_data_a4e7eb38508f2a35e37e13195a81de8df} 
+void Equation\+Data\+::plot\+Data\+And\+Regression (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Функция подготавливающая график с данными к отображению 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция должна быть использованна после вызова prepare\+Data 
+\end{DoxyWarning}
+\Hypertarget{class_equation_data_af1dbe1419cf2e7a244923e993b39a686}\index{EquationData@{EquationData}!prepareData@{prepareData}}
+\index{prepareData@{prepareData}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{prepareData()}{prepareData()}}
+{\footnotesize\ttfamily \label{class_equation_data_af1dbe1419cf2e7a244923e993b39a686} 
+void Equation\+Data\+::prepare\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Функция подготавливающая данные к отображению 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция должна быть использованна после вызова generate\+Sample, calculate\+Linear\+Coefficients, compute\+Correlation, compute\+Coefficient\+Of\+Determination, compute\+Elastacity, compute\+Beta 
+\end{DoxyWarning}
+\Hypertarget{class_equation_data_abdb3d1bf3d5299c31e2b7c3ce168b8f4}\index{EquationData@{EquationData}!setA0@{setA0}}
+\index{setA0@{setA0}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setA0()}{setA0()}}
+{\footnotesize\ttfamily \label{class_equation_data_abdb3d1bf3d5299c31e2b7c3ce168b8f4} 
+void Equation\+Data\+::set\+A0 (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая свободный коэффициент уравнения связи 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & свободный коэффициент уравнения связи \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_a44853f7c283d26a174367a5660342080}\index{EquationData@{EquationData}!setA1@{setA1}}
+\index{setA1@{setA1}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setA1()}{setA1()}}
+{\footnotesize\ttfamily \label{class_equation_data_a44853f7c283d26a174367a5660342080} 
+void Equation\+Data\+::set\+A1 (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая выборочный коэффициент уравнения связи 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & выборочный коэффициент уравнения связи \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_a7fc4c37994226557ab4d72ad2d80a520}\index{EquationData@{EquationData}!setBeta@{setBeta}}
+\index{setBeta@{setBeta}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setBeta()}{setBeta()}}
+{\footnotesize\ttfamily \label{class_equation_data_a7fc4c37994226557ab4d72ad2d80a520} 
+void Equation\+Data\+::set\+Beta (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая бета коэффициент уравнения связи 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & бета коэффициент уравнения связи \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_a8e2ac215527489d6915d85dab864c818}\index{EquationData@{EquationData}!setCorr@{setCorr}}
+\index{setCorr@{setCorr}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setCorr()}{setCorr()}}
+{\footnotesize\ttfamily \label{class_equation_data_a8e2ac215527489d6915d85dab864c818} 
+void Equation\+Data\+::set\+Corr (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая коэффициент парной корреляции уравнения связи 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & коэффициент парной корреляции уравнения связи \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_ad7c3143da8d6edfc04d7ebdba92a0102}\index{EquationData@{EquationData}!setDet@{setDet}}
+\index{setDet@{setDet}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setDet()}{setDet()}}
+{\footnotesize\ttfamily \label{class_equation_data_ad7c3143da8d6edfc04d7ebdba92a0102} 
+void Equation\+Data\+::set\+Det (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая коэффициент детерминации уравнения связи 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & коэффициент детерминации уравнения связи \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_a07b3222fd8e04933097a80ecabe9b0ef}\index{EquationData@{EquationData}!setElast@{setElast}}
+\index{setElast@{setElast}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setElast()}{setElast()}}
+{\footnotesize\ttfamily \label{class_equation_data_a07b3222fd8e04933097a80ecabe9b0ef} 
+void Equation\+Data\+::set\+Elast (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая коэффициент эластичности уравнения связи 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & коэффициент эластичности уравнения связи \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_a27c88043a09b97fc01a5963169e44cca}\index{EquationData@{EquationData}!setN@{setN}}
+\index{setN@{setN}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setN()}{setN()}}
+{\footnotesize\ttfamily \label{class_equation_data_a27c88043a09b97fc01a5963169e44cca} 
+void Equation\+Data\+::setN (\begin{DoxyParamCaption}\item[{long long}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая количество эксперементов 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & количество эксперементов \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_a82bc803dc17d8c3bbaca6c3836612ce7}\index{EquationData@{EquationData}!setSize@{setSize}}
+\index{setSize@{setSize}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily \label{class_equation_data_a82bc803dc17d8c3bbaca6c3836612ce7} 
+void Equation\+Data\+::set\+Size (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long long $>$ \&}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая список значений количества элементов для каждого эксперемента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & список значений количества элементов для каждого эксперемента \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_aaa850c4debb522a30c519445165a2785}\index{EquationData@{EquationData}!setSqx@{setSqx}}
+\index{setSqx@{setSqx}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setSqx()}{setSqx()}}
+{\footnotesize\ttfamily \label{class_equation_data_aaa850c4debb522a30c519445165a2785} 
+void Equation\+Data\+::set\+Sqx (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long long $>$ \&}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая список значений квадрата количества элементов для каждого эксперемента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & список значений квадрата количества элементов для каждого эксперемента \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_aadca0597f15a88df60f52e724bc47e6b}\index{EquationData@{EquationData}!setTime@{setTime}}
+\index{setTime@{setTime}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily \label{class_equation_data_aadca0597f15a88df60f52e724bc47e6b} 
+void Equation\+Data\+::set\+Time (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long long $>$ \&}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая список значений времени выполнения для каждого эксперемента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & список значений времени выполнения для каждого эксперемента \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_equation_data_ad4c9d1dc7fbb35686be56ca1d5dd9aea}\index{EquationData@{EquationData}!setXmulty@{setXmulty}}
+\index{setXmulty@{setXmulty}!EquationData@{EquationData}}
+\doxysubsubsection{\texorpdfstring{setXmulty()}{setXmulty()}}
+{\footnotesize\ttfamily \label{class_equation_data_ad4c9d1dc7fbb35686be56ca1d5dd9aea} 
+void Equation\+Data\+::set\+Xmulty (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long long $>$ \&}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Функция устанавливающая список значений времени выполнения на количество элементов для каждого эксперемента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em value} & список значений времени выполнения на количество элементов для каждого эксперемента \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Equation\+Data.\+h\item 
+Equation\+Data.\+cpp\end{DoxyCompactItemize}

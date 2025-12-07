@@ -1,0 +1,98 @@
+\doxysection{Класс Multi\+Widget}
+\hypertarget{class_multi_widget}{}\label{class_multi_widget}\index{MultiWidget@{MultiWidget}}
+
+
+Граф наследования\+:Multi\+Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_multi_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Multi\+Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_multi_widget__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_multi_widget_1_1_window_params}{Window\+Params}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multi_widget_a6ee3f8b93d94a2093b929c28a91e8abf}\label{class_multi_widget_a6ee3f8b93d94a2093b929c28a91e8abf} 
+void {\bfseries add\+Widget} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ widget)
+\item 
+\Hypertarget{class_multi_widget_ad7b0fa703e1a811cf0acfe83bab9b6b0}\label{class_multi_widget_ad7b0fa703e1a811cf0acfe83bab9b6b0} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ $>$ \& {\bfseries get\+Widgets} () const
+\item 
+void \mbox{\hyperlink{class_multi_widget_a54c04f751297e832229eb4b36688339a}{show}} (tgui\+::\+Gui \&gui) override
+\item 
+\Hypertarget{class_multi_widget_a97d59d822064d5aaf62e4740800319d9}\label{class_multi_widget_a97d59d822064d5aaf62e4740800319d9} 
+void {\bfseries update} ()
+\item 
+\Hypertarget{class_multi_widget_a12cba225efe795dae39d1551d6bc3808}\label{class_multi_widget_a12cba225efe795dae39d1551d6bc3808} 
+void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ widget)
+\item 
+\Hypertarget{class_multi_widget_ab5e58f5a837f26d15759237cd2af9629}\label{class_multi_widget_ab5e58f5a837f26d15759237cd2af9629} 
+void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ widget, const \mbox{\hyperlink{struct_multi_widget_1_1_window_params}{Window\+Params}} \&params)
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_base_widget}{Base\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Base\+Widget} (const \mbox{\hyperlink{class_base_widget}{Base\+Widget}} \&)=delete
+\item 
+\mbox{\hyperlink{class_base_widget}{Base\+Widget}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_base_widget}{Base\+Widget}} \&)=delete
+\item 
+void {\bfseries update} ()
+\item 
+void {\bfseries update} (const \mbox{\hyperlink{struct_base_widget_1_1_window_params}{Window\+Params}} \&params)
+\item 
+virtual void {\bfseries assign\+Parameters} ()
+\item 
+tgui\+::\+Container\+::\+Ptr {\bfseries get\+Widget} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные члены унаследованные от \mbox{\hyperlink{class_base_widget}{Base\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries remove\+Widgets} ()
+\item 
+void {\bfseries delete\+Widgets} ()
+\item 
+virtual void {\bfseries create} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_base_widget}{Base\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+tgui\+::\+Container\+::\+Ptr {\bfseries widget}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_multi_widget_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_multi_widget_a54c04f751297e832229eb4b36688339a}\index{MultiWidget@{MultiWidget}!show@{show}}
+\index{show@{show}!MultiWidget@{MultiWidget}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_multi_widget_a54c04f751297e832229eb4b36688339a} 
+void Multi\+Widget\+::show (\begin{DoxyParamCaption}\item[{tgui\+::\+Gui \&}]{gui}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_base_widget}{Base\+Widget}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Multi\+Widget.\+h\item 
+Multi\+Widget.\+cpp\end{DoxyCompactItemize}

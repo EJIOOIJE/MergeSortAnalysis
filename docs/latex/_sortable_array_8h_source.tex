@@ -1,0 +1,35 @@
+\doxysection{Sortable\+Array.\+h}
+\hypertarget{_sortable_array_8h_source}{}\label{_sortable_array_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ SORTABLE\_ARRAY\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ SORTABLE\_ARRAY\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Serializable.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }SortableArray\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_serializable}{Serializable}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ SortableArray();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sortable_array_a3931d5be740b6cd938772e493ab07856}{clearData}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ SortableArray*\ \mbox{\hyperlink{class_sortable_array_acfd1a9f70bf65f2c60441afd5355495a}{clone}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{explicit}\ SortableArray(\textcolor{keyword}{const}\ std::vector<double>\&\ data);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<double>\&\ \mbox{\hyperlink{class_sortable_array_a3491b5f653187d332dfdfe99ad9267b1}{getData}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sortable_array_a5e82596c130d3053a2939a00e1e8c950}{setData}}(\textcolor{keyword}{const}\ std::vector<double>\&\ data);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ json\ \mbox{\hyperlink{class_sortable_array_a3394982ab0357a9eae7bf074d383f759}{toJson}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sortable_array_a7640e8aa4272f6d1b57ccfa9f9a63940}{fromJson}}(\textcolor{keyword}{const}\ json\&\ j)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00067\ \ \ \ \ std::vector<double>\ data;}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SORTABLE\_ARRAY\_H}}
+
+\end{DoxyCode}

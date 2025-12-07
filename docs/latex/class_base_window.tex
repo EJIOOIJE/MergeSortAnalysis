@@ -1,0 +1,84 @@
+\doxysection{Класс Base\+Window}
+\hypertarget{class_base_window}{}\label{class_base_window}\index{BaseWindow@{BaseWindow}}
+
+
+Граф наследования\+:Base\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_window__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_base_window_a69deb9634213aa5c18907ea9ac859afa}\label{class_base_window_a69deb9634213aa5c18907ea9ac859afa} 
+{\bfseries Base\+Window} (const sf\+::\+Vector2u \&window\+Size)
+\item 
+\Hypertarget{class_base_window_a90eb0b20e2a9679b8170ddb0a03a578d}\label{class_base_window_a90eb0b20e2a9679b8170ddb0a03a578d} 
+void {\bfseries update} ()
+\item 
+\Hypertarget{class_base_window_a36c1dddd12ecd6dc08a61ece16b4c8da}\label{class_base_window_a36c1dddd12ecd6dc08a61ece16b4c8da} 
+void {\bfseries update} (const \mbox{\hyperlink{struct_base_widget_1_1_window_params}{Base\+Widget\+::\+Window\+Params}} \&params)
+\item 
+\Hypertarget{class_base_window_a66bde40e4c960ea2bf231ba8e11b4781}\label{class_base_window_a66bde40e4c960ea2bf231ba8e11b4781} 
+void {\bfseries show} ()
+\item 
+\Hypertarget{class_base_window_a6975ddbcb275339d4a79efc35909243b}\label{class_base_window_a6975ddbcb275339d4a79efc35909243b} 
+tgui\+::\+Gui \& {\bfseries get\+Gui} ()
+\item 
+\Hypertarget{class_base_window_af31610d949d25504b1bc75bb0f257374}\label{class_base_window_af31610d949d25504b1bc75bb0f257374} 
+sf\+::\+Render\+Window \& {\bfseries get\+Window} ()
+\item 
+\Hypertarget{class_base_window_ac04dbb8625eb0f8c39400e23437afaed}\label{class_base_window_ac04dbb8625eb0f8c39400e23437afaed} 
+\mbox{\hyperlink{class_base_widget}{Base\+Widget}} \& {\bfseries get\+Widget} ()
+\item 
+\Hypertarget{class_base_window_ab012b09865f23e15cb0aee38200f93d3}\label{class_base_window_ab012b09865f23e15cb0aee38200f93d3} 
+virtual void {\bfseries handle\+Event} (const sf\+::\+Event \&event)
+\item 
+\Hypertarget{class_base_window_a5359a63a761b6808eeb3b02839cfca06}\label{class_base_window_a5359a63a761b6808eeb3b02839cfca06} 
+void {\bfseries set\+Size} (const sf\+::\+Vector2u \&new\+Size)
+\item 
+\Hypertarget{class_base_window_a56df4b9b71202d2984067b842cf84417}\label{class_base_window_a56df4b9b71202d2984067b842cf84417} 
+void {\bfseries set\+Title} (const std\+::string \&title)
+\item 
+\Hypertarget{class_base_window_a028d01d4691b08bb29eaf20aac638adf}\label{class_base_window_a028d01d4691b08bb29eaf20aac638adf} 
+void {\bfseries stop} ()
+\item 
+\Hypertarget{class_base_window_a9835b2aab4e7759e3c61c9d77a26daae}\label{class_base_window_a9835b2aab4e7759e3c61c9d77a26daae} 
+void {\bfseries set\+Widget} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ new\+Widget)
+\item 
+\Hypertarget{class_base_window_a06c9050a049988a54af761ad1c90bbfa}\label{class_base_window_a06c9050a049988a54af761ad1c90bbfa} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ {\bfseries release\+Widget} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_base_window_a323af2f3899792a9c6566d2ec3e40d80}\label{class_base_window_a323af2f3899792a9c6566d2ec3e40d80} 
+virtual void {\bfseries create\+Window} (const sf\+::\+Vector2u \&window\+Size)
+\item 
+\Hypertarget{class_base_window_a5c54b177052e6c4c3de0783574686886}\label{class_base_window_a5c54b177052e6c4c3de0783574686886} 
+void {\bfseries prepare\+Widget} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_base_window_a8beb9da9371b0838daae64a21046a617}\label{class_base_window_a8beb9da9371b0838daae64a21046a617} 
+sf\+::\+Render\+Window {\bfseries window}
+\item 
+\Hypertarget{class_base_window_ac7c1dabf49322dd22678785515e5bfca}\label{class_base_window_ac7c1dabf49322dd22678785515e5bfca} 
+tgui\+::\+Gui {\bfseries gui}
+\item 
+\Hypertarget{class_base_window_ae4a97c4c829c6c284fbee1b044bcf9ae}\label{class_base_window_ae4a97c4c829c6c284fbee1b044bcf9ae} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_base_widget}{Base\+Widget}} $>$ {\bfseries widget}
+\item 
+\Hypertarget{class_base_window_a672a7a08174a406bd2f0f0c1eaaf5a65}\label{class_base_window_a672a7a08174a406bd2f0f0c1eaaf5a65} 
+sf\+::\+Vector2u {\bfseries size}
+\end{DoxyCompactItemize}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Window.\+h\item 
+Base\+Window.\+cpp\end{DoxyCompactItemize}

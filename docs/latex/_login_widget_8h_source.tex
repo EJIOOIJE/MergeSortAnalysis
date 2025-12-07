@@ -1,0 +1,40 @@
+\doxysection{Login\+Widget.\+h}
+\hypertarget{_login_widget_8h_source}{}\label{_login_widget_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}BaseWidget.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }LoginWidget\ :\ \textcolor{keyword}{public}\ BaseWidget\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_login_widget_1_1_window_params}{WindowParams}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ sf::Vector2u\ windowSize\{\ 1280,\ 720\ \};}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ std::string\ loginDefaultText\{\ \textcolor{stringliteral}{"{}Username"{}}\ \};}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ std::string\ passwordDefaultText\{\ \textcolor{stringliteral}{"{}Password"{}}\ \};}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ std::string\ loginButtonText\{\ \textcolor{stringliteral}{"{}Login"{}}\ \};}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ std::string\ exitButtonText\{\ \textcolor{stringliteral}{"{}Exit"{}}\ \};}
+\DoxyCodeLine{00013\ \ \ \ \ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ LoginWidget();}
+\DoxyCodeLine{00016\ \ \ \ \ \string~LoginWidget()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ show(tgui::Gui\&\ gui)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ tgui::Container::Ptr\ getRootWidget()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ assignParameters()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ create()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_login_widget_1_1_window_params}{WindowParams}}\ windowParams;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ tgui::EditBox::Ptr\ loginEdit;}
+\DoxyCodeLine{00030\ \ \ \ \ tgui::EditBox::Ptr\ passwordEdit;}
+\DoxyCodeLine{00031\ \ \ \ \ tgui::Button::Ptr\ loginButton;}
+\DoxyCodeLine{00032\ \ \ \ \ tgui::Button::Ptr\ exitButton;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ triggerLogin();}
+\DoxyCodeLine{00035\ \};}
+
+\end{DoxyCode}

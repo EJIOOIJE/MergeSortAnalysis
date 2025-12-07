@@ -1,0 +1,111 @@
+\doxysection{Класс Algorithm}
+\hypertarget{class_algorithm}{}\label{class_algorithm}\index{Algorithm@{Algorithm}}
+
+
+Класс для операций с числами  
+
+
+
+
+{\ttfamily \#include $<$Algorithm.\+h$>$}
+
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_algorithm_a4a1bb029ae793584548cfca8ef0d4a7d}{generate\+Fisk}} (double alpha, double c)
+\begin{DoxyCompactList}\small\item\em Функция генерации числа с распределением fisk. \end{DoxyCompactList}\item 
+static std\+::vector$<$ double $>$ \mbox{\hyperlink{class_algorithm_aa90a56ddc4443846d8d7f2ce6b547151}{generate\+Fisk\+Array}} (long long size, double alpha, double c)
+\begin{DoxyCompactList}\small\item\em Функция генерации вектора чисел с распределением fisk. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_sort_result}{Sort\+Result}} \mbox{\hyperlink{class_algorithm_abe9af0ab0a1c9cb089699cec1ce2d5f6}{merge\+Sort}} (std\+::vector$<$ double $>$ \&arr)
+\begin{DoxyCompactList}\small\item\em Функция сортировки слиянием для вектора$<$double$>$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для операций с числами 
+
+Данный класс предоставляет функционал для различных операций с числами. 
+
+\label{doc-func-members}
+\Hypertarget{class_algorithm_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_algorithm_a4a1bb029ae793584548cfca8ef0d4a7d}\index{Algorithm@{Algorithm}!generateFisk@{generateFisk}}
+\index{generateFisk@{generateFisk}!Algorithm@{Algorithm}}
+\doxysubsubsection{\texorpdfstring{generateFisk()}{generateFisk()}}
+{\footnotesize\ttfamily \label{class_algorithm_a4a1bb029ae793584548cfca8ef0d4a7d} 
+double Algorithm\+::generate\+Fisk (\begin{DoxyParamCaption}\item[{double}]{alpha}{, }\item[{double}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Функция генерации числа с распределением fisk. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em alpha} & парамтер масштаба\\
+\hline
+\mbox{\texttt{in}}  & {\em c} & параметр формы\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Число с распределением fisk
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_algorithm_a4a1bb029ae793584548cfca8ef0d4a7d}{Algorithm::generateFisk}}(a,\ c)}
+
+\end{DoxyCode}
+ \Hypertarget{class_algorithm_aa90a56ddc4443846d8d7f2ce6b547151}\index{Algorithm@{Algorithm}!generateFiskArray@{generateFiskArray}}
+\index{generateFiskArray@{generateFiskArray}!Algorithm@{Algorithm}}
+\doxysubsubsection{\texorpdfstring{generateFiskArray()}{generateFiskArray()}}
+{\footnotesize\ttfamily \label{class_algorithm_aa90a56ddc4443846d8d7f2ce6b547151} 
+std\+::vector$<$ double $>$ Algorithm\+::generate\+Fisk\+Array (\begin{DoxyParamCaption}\item[{long long}]{size}{, }\item[{double}]{alpha}{, }\item[{double}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Функция генерации вектора чисел с распределением fisk. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in}}  & {\em size} & размер вектора\\
+\hline
+\mbox{\texttt{in}}  & {\em alpha} & парамтер масштаба\\
+\hline
+\mbox{\texttt{in}}  & {\em c} & параметр формы\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Вектор чисел с распределением fisk
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_algorithm_aa90a56ddc4443846d8d7f2ce6b547151}{Algorithm::generateFiskArray}}(n,\ a,\ c)}
+
+\end{DoxyCode}
+ \Hypertarget{class_algorithm_abe9af0ab0a1c9cb089699cec1ce2d5f6}\index{Algorithm@{Algorithm}!mergeSort@{mergeSort}}
+\index{mergeSort@{mergeSort}!Algorithm@{Algorithm}}
+\doxysubsubsection{\texorpdfstring{mergeSort()}{mergeSort()}}
+{\footnotesize\ttfamily \label{class_algorithm_abe9af0ab0a1c9cb089699cec1ce2d5f6} 
+\mbox{\hyperlink{struct_sort_result}{Sort\+Result}} Algorithm\+::merge\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{arr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Функция сортировки слиянием для вектора$<$double$>$. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{in,out}}  & {\em arr} & вектор$<$double$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Структура \doxylink{struct_sort_result}{Sort\+Result} с параметрами сортировки
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_algorithm_abe9af0ab0a1c9cb089699cec1ce2d5f6}{Algorithm::mergeSort}}(vector);}
+
+\end{DoxyCode}
+ 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Algorithm.\+h\item 
+Algorithm.\+cpp\end{DoxyCompactItemize}
